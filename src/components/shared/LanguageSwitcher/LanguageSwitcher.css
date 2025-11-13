@@ -1,0 +1,25 @@
+.language-switcher {
+  display: flex;
+  gap: 5px;
+  background-color: var(--primary-medium);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.language-btn {
+  background: none;
+  border: none;
+  color: var(--white);
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+.language-btn.active {
+  background-color: var(--primary-light);
+}
+
+.language-btn:hover:not(.active) {
+  background-color: rgba(255, 255, 255, 0.1);
+}

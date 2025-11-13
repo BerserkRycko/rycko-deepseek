@@ -1,0 +1,14 @@
+{
+  "home": {
+    "welcome": "Welcome to our website",
+    "content": "This is a sample text in English."
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

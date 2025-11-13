@@ -1,0 +1,20 @@
+.home {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #ffffff;
+  color: #003d4b;
+}
+
+.hero h1 {
+  color: #016982;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #003d4b;
+  font-size: 1.2rem;
+}
