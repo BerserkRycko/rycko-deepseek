@@ -8,27 +8,55 @@ export const translations = {
       contact: "Contact"
     },
     home: {
-      title: "Welcome to Our Website",
-      subtitle: "Innovative solutions for your business",
-      heroTitle: "Transforming Ideas into Reality",
-      heroDescription: "We are a team of passionate professionals dedicated to delivering exceptional results for our clients.",
-      ctaButton: "Get Started",
-      blockTitle: "Featured Content",
-      blockContent: "Discover our latest projects and innovations that are shaping the future of technology and business solutions.",
-      features: {
-        title: "Why Choose Us?",
-        feature1: {
-          title: "Expert Team",
-          description: "Our team consists of industry experts with years of experience."
+      heroTitle: "Welcome to My World: Where Technology Meets Creativity",
+      heroDescription: "Hello, I'm Rycko, a passionate web developer and tech lead with a keen interest in exploring the intersections of technology, art, and design.",
+      ctaButton: "Explore My Work",
+      aboutTitle: "About Me",
+      aboutDescription: "As a seasoned web developer, I've had the privilege of working on various projects that have honed my skills in crafting innovative digital solutions. Currently, I'm leading a team as a tech lead, where I get to mentor and collaborate with talented individuals to push the boundaries of what's possible on the web.",
+      interestsTitle: "My Interests & Passions",
+      expectationsTitle: "What You Can Expect",
+      expectationsDescription: "On this website, I'll be sharing valuable content across multiple creative and technical domains:",
+      joinTitle: "Join Me on This Journey",
+      joinDescription: "I'm excited to share my knowledge, experiences, and passions with you. Whether you're a fellow developer, designer, or simply someone interested in technology and creativity, I hope you'll find inspiration and value in my content.",
+      stayConnected: "Stay Connected",
+      stayConnectedDescription: "Want to stay up-to-date with my latest posts, projects, and videos?",
+      letsCreate: "Let's Create Something Amazing Together!",
+      thanks: "Thanks for visiting my website. I'm looking forward to sharing my world with you and exploring the intersections of technology, art, and design.",
+      signature: "Best, Rycko",
+      // Interests
+      interests: {
+        development: {
+          title: "Web Development",
+          description: "Building scalable, efficient, and user-friendly digital products"
         },
-        feature2: {
-          title: "Quality Assurance",
-          description: "We maintain the highest standards in all our deliverables."
+        design: {
+          title: "Design",
+          description: "Merging form and function to create visually stunning experiences"
         },
-        feature3: {
-          title: "24/7 Support",
-          description: "Round-the-clock support to ensure your success."
+        photography: {
+          title: "Photography",
+          description: "Capturing life's moments and beauty through the lens"
+        },
+        illustration: {
+          title: "Illustration",
+          description: "Bringing imagination to life through art"
+        },
+        animation: {
+          title: "Animations",
+          description: "Crafting engaging stories through motion graphics"
+        },
+        content: {
+          title: "Content Creation",
+          description: "Producing high-quality content that informs and entertains"
         }
+      },
+      // Expectations
+      expectations: {
+        articles: "In-depth articles on web development, design, and technology",
+        tutorials: "Tutorials and guides on using various web tools and technologies",
+        projects: "Personal projects showcasing my photography, illustration, and design skills",
+        reviews: "Book reviews and recommendations",
+        videos: "Video content on web development, design, and more"
       }
     },
     blog: {
@@ -53,33 +81,61 @@ export const translations = {
   es: {
     header: {
       home: "Inicio",
-      about: "Nosotros",
+      about: "Sobre Mí",
       services: "Servicios",
       blog: "Blog",
       contact: "Contacto"
     },
     home: {
-      title: "Bienvenido a Nuestro Sitio Web",
-      subtitle: "Soluciones innovadoras para tu negocio",
-      heroTitle: "Transformando Ideas en Realidad",
-      heroDescription: "Somos un equipo de profesionales apasionados dedicados a entregar resultados excepcionales para nuestros clientes.",
-      ctaButton: "Comenzar",
-      blockTitle: "Contenido Destacado",
-      blockContent: "Descubre nuestros últimos proyectos e innovaciones que están moldeando el futuro de la tecnología y soluciones empresariales.",
-      features: {
-        title: "¿Por Qué Elegirnos?",
-        feature1: {
-          title: "Equipo Experto",
-          description: "Nuestro equipo está formado por expertos de la industria con años de experiencia."
+      heroTitle: "Bienvenido a Mi Mundo: Donde la Tecnología se Encuentra con la Creatividad",
+      heroDescription: "Hola, soy Rycko, un desarrollador web apasionado y tech lead con un gran interés en explorar las intersecciones entre tecnología, arte y diseño.",
+      ctaButton: "Explora Mi Trabajo",
+      aboutTitle: "Sobre Mí",
+      aboutDescription: "Como desarrollador web experimentado, he tenido el privilegio de trabajar en varios proyectos que han perfeccionado mis habilidades en la creación de soluciones digitales innovadoras. Actualmente, lidero un equipo como tech lead, donde tengo la oportunidad de mentorizar y colaborar con talentosos individuos para expandir los límites de lo posible en la web.",
+      interestsTitle: "Mis Intereses y Pasiones",
+      expectationsTitle: "Lo Que Puedes Esperar",
+      expectationsDescription: "En este sitio web, compartiré contenido valioso a través de múltiples dominios creativos y técnicos:",
+      joinTitle: "Acompáñame en Este Viaje",
+      joinDescription: "Estoy emocionado de compartir mi conocimiento, experiencias y pasiones contigo. Ya seas un desarrollador, diseñador o simplemente alguien interesado en la tecnología y la creatividad, espero que encuentres inspiración y valor en mi contenido.",
+      stayConnected: "Mantente Conectado",
+      stayConnectedDescription: "¿Quieres mantenerte al día con mis últimas publicaciones, proyectos y videos?",
+      letsCreate: "¡Creemos Algo Increíble Juntos!",
+      thanks: "Gracias por visitar mi sitio web. Estoy deseando compartir mi mundo contigo y explorar las intersecciones de tecnología, arte y diseño.",
+      signature: "Saludos, Rycko",
+      // Interests
+      interests: {
+        development: {
+          title: "Desarrollo Web",
+          description: "Construyendo productos digitales escalables, eficientes y fáciles de usar"
         },
-        feature2: {
-          title: "Garantía de Calidad",
-          description: "Mantenemos los más altos estándares en todas nuestras entregas."
+        design: {
+          title: "Diseño",
+          description: "Uniendo forma y función para crear experiencias visualmente impactantes"
         },
-        feature3: {
-          title: "Soporte 24/7",
-          description: "Soporte las 24 horas para garantizar tu éxito."
+        photography: {
+          title: "Fotografía",
+          description: "Capturando momentos y belleza a través del lente"
+        },
+        illustration: {
+          title: "Ilustración",
+          description: "Dando vida a la imaginación a través del arte"
+        },
+        animation: {
+          title: "Animaciones",
+          description: "Creando historias atractivas mediante gráficos en movimiento"
+        },
+        content: {
+          title: "Creación de Contenido",
+          description: "Produciendo contenido de alta calidad que informa y entretiene"
         }
+      },
+      // Expectations
+      expectations: {
+        articles: "Artículos en profundidad sobre desarrollo web, diseño y tecnología",
+        tutorials: "Tutoriales y guías sobre el uso de diversas herramientas y tecnologías web",
+        projects: "Proyectos personales que muestran mis habilidades en fotografía, ilustración y diseño",
+        reviews: "Reseñas y recomendaciones de libros",
+        videos: "Contenido de video sobre desarrollo web, diseño y más"
       }
     },
     blog: {

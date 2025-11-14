@@ -14,9 +14,8 @@ const Header = () => {
           <div className="logo">
             {/* Reemplaza con tu logo */}
             <div className="logo-placeholder">
-              <span>🏢</span>
+              <span><Link to="/" className="logo-text"><img src='logo.png'/></Link></span>
             </div>
-            <Link to="/" className="logo-text">Rycko</Link>
           </div>
           
           <nav className="navigation">

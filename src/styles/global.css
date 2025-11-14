@@ -361,7 +361,19 @@ a:hover {
   margin-right: auto;
   opacity: 0.9;
 }
-
+.floating-elements {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: space-around;
+  height: 200px;
+}
+.floating-element{
+  width: 25%;
+  font-size: 50px;
+}
 .blog-hero {
   background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
   color: var(--white);
@@ -784,7 +796,10 @@ a:hover {
   .blog-subtitle {
     font-size: 1.1rem;
   }
-  
+  .floating-elements{
+    display: flex;
+
+  }
   .features-grid,
   .featured-grid {
     grid-template-columns: 1fr;

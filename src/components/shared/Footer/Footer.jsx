@@ -1,9 +1,8 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useLanguage } from '../../../hooks/useLanguage';
 import styles from './Footer.module.css';
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { t } = useLanguage(); 
 
   return (
     <footer className={styles.footer}>
