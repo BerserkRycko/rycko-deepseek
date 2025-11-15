@@ -770,7 +770,9 @@ a:hover {
 .p-2 { padding: 1rem; }
 .p-3 { padding: 1.5rem; }
 .p-4 { padding: 2rem; }
-
+.floating-cards{
+  display: flex;
+}
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .header-content {

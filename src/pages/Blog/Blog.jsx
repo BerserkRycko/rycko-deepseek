@@ -1,36 +1,71 @@
-import React, { useState, useMemo } from 'react'
-import { useLanguage } from '../../hooks/useLanguage'
-import { getArticlesByLanguage, getFeaturedArticles } from '../../data/articles'
-import { Link } from 'react-router-dom'
-import './Blog.css'
+import React, { useState, useMemo, useEffect } from 'react';
+import { useLanguage } from '../../hooks/useLanguage';
+import { loadBlogPosts, getFeaturedPosts } from '../../utils/blogLoader';
+import { Link } from 'react-router-dom';
+import './Blog.css';
 
 const Blog = () => {
-  const { t, currentLanguage } = useLanguage()
-  const [searchTerm, setSearchTerm] = useState('')
-  const [selectedCategory, setSelectedCategory] = useState('all')
+  const { t, currentLanguage } = useLanguage();
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [posts, setPosts] = useState([]);
+  const [featuredPosts, setFeaturedPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const allArticles = getArticlesByLanguage(currentLanguage)
-  const featuredArticles = getFeaturedArticles(currentLanguage)
+  // Cargar posts cuando cambie el idioma
+  useEffect(() => {
+    const loadPosts = async () => {
+      setLoading(true);
+      try {
+        const [allPosts, featured] = await Promise.all([
+          loadBlogPosts(currentLanguage),
+          getFeaturedPosts(currentLanguage)
+        ]);
+        setPosts(allPosts);
+        setFeaturedPosts(featured);
+      } catch (error) {
+        console.error('Error loading blog posts:', error);
+        setPosts([]);
+        setFeaturedPosts([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadPosts();
+  }, [currentLanguage]);
 
   // Obtener categorías únicas
   const categories = useMemo(() => {
-    const cats = ['all', ...new Set(allArticles.map(article => article.category))]
-    return cats
-  }, [allArticles])
+    const cats = ['all', ...new Set(posts.map(post => post.category))];
+    return cats;
+  }, [posts]);
 
   // Filtrar artículos
-  const filteredArticles = useMemo(() => {
-    return allArticles.filter(article => {
-      const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                           article.excerpt.toLowerCase().includes(searchTerm.toLowerCase())
-      const matchesCategory = selectedCategory === 'all' || article.category === selectedCategory
-      return matchesSearch && matchesCategory
-    })
-  }, [allArticles, searchTerm, selectedCategory])
+  const filteredPosts = useMemo(() => {
+    return posts.filter(post => {
+      const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           post.excerpt.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchesCategory = selectedCategory === 'all' || post.category === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+  }, [posts, searchTerm, selectedCategory]);
 
   const formatDate = (dateString) => {
-    const options = { year: 'numeric', month: 'long', day: 'numeric' }
-    return new Date(dateString).toLocaleDateString(currentLanguage === 'es' ? 'es-ES' : 'en-US', options)
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(dateString).toLocaleDateString(currentLanguage === 'es' ? 'es-ES' : 'en-US', options);
+  };
+
+  if (loading) {
+    return (
+      <div className="blog-page">
+        <div className="container">
+          <div className="loading-spinner">
+            <p>{t('blog.loading') || 'Loading posts...'}</p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -63,33 +98,33 @@ const Blog = () => {
                 className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
                 onClick={() => setSelectedCategory(category)}
               >
-                {category === 'all' ? 'All' : category}
+                {category === 'all' ? (currentLanguage === 'es' ? 'Todos' : 'All') : category}
               </button>
             ))}
           </div>
         </div>
 
         {/* Artículos Destacados */}
-        {featuredArticles.length > 0 && (
+        {featuredPosts.length > 0 && (
           <section className="featured-section">
             <h2 className="section-title">{t('blog.featured')}</h2>
             <div className="featured-grid">
-              {featuredArticles.map(article => (
-                <article key={article.id} className="featured-article">
+              {featuredPosts.map(post => (
+                <article key={post.slug} className="featured-article">
                   <div className="article-image">
-                    <img src={article.image} alt={article.title} />
-                    <div className="article-category">{article.category}</div>
+                    <img src={post.image || '/images/blog/default.jpg'} alt={post.title} />
+                    <div className="article-category">{post.category}</div>
                   </div>
                   <div className="article-content">
                     <h3 className="article-title">
-                      <Link to={`/blog/${article.slug}`}>{article.title}</Link>
+                      <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                     </h3>
-                    <p className="article-excerpt">{article.excerpt}</p>
+                    <p className="article-excerpt">{post.excerpt}</p>
                     <div className="article-meta">
-                      <span className="article-date">{formatDate(article.date)}</span>
-                      <span className="article-read-time">{article.readTime}</span>
+                      <span className="article-date">{formatDate(post.date)}</span>
+                      <span className="article-read-time">{post.readTime}</span>
                     </div>
-                    <Link to={`/blog/${article.slug}`} className="read-more-btn">
+                    <Link to={`/blog/${post.slug}`} className="read-more-btn">
                       {t('blog.readMore')}
                     </Link>
                   </div>
@@ -102,25 +137,25 @@ const Blog = () => {
         {/* Todos los Artículos */}
         <section className="articles-section">
           <h2 className="section-title">{t('blog.recent')}</h2>
-          {filteredArticles.length > 0 ? (
+          {filteredPosts.length > 0 ? (
             <div className="articles-grid">
-              {filteredArticles.map(article => (
-                <article key={article.id} className="article-card">
+              {filteredPosts.map(post => (
+                <article key={post.slug} className="article-card">
                   <div className="article-image">
-                    <img src={article.image} alt={article.title} />
-                    <div className="article-category">{article.category}</div>
+                    <img src={post.image || '/images/blog/default.jpg'} alt={post.title} />
+                    <div className="article-category">{post.category}</div>
                   </div>
                   <div className="article-content">
                     <h3 className="article-title">
-                      <Link to={`/blog/${article.slug}`}>{article.title}</Link>
+                      <Link to={`/blog/${post.slug}`}>{post.title}</Link>
                     </h3>
-                    <p className="article-excerpt">{article.excerpt}</p>
+                    <p className="article-excerpt">{post.excerpt}</p>
                     <div className="article-meta">
-                      <span className="article-author">By {article.author}</span>
-                      <span className="article-date">{formatDate(article.date)}</span>
-                      <span className="article-read-time">{article.readTime}</span>
+                      <span className="article-author">{currentLanguage === 'es' ? 'Por' : 'By'} {post.author}</span>
+                      <span className="article-date">{formatDate(post.date)}</span>
+                      <span className="article-read-time">{post.readTime}</span>
                     </div>
-                    <Link to={`/blog/${article.slug}`} className="read-more-btn">
+                    <Link to={`/blog/${post.slug}`} className="read-more-btn">
                       {t('blog.readMore')}
                     </Link>
                   </div>
@@ -135,7 +170,7 @@ const Blog = () => {
         </section>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

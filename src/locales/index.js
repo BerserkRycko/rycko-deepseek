@@ -69,7 +69,9 @@ export const translations = {
       search: "Search articles...",
       noArticles: "No articles found",
       featured: "Featured Articles",
-      recent: "Recent Articles"
+      recent: "Recent Articles",
+      loading: "Loading posts...", // Nueva
+      notFound: "Article Not Found" // Nueva
     },
     footer: {
       description: "Leading the way in innovative solutions and exceptional service delivery.",
@@ -148,7 +150,9 @@ export const translations = {
       search: "Buscar artículos...",
       noArticles: "No se encontraron artículos",
       featured: "Artículos Destacados",
-      recent: "Artículos Recientes"
+      recent: "Artículos Recientes",
+      loading: "Cargando publicaciones...", // Nueva
+      notFound: "Artículo No Encontrado" // Nueva
     },
     footer: {
       description: "Liderando el camino en soluciones innovadoras y entrega de servicio excepcional.",

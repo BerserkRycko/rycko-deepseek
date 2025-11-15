@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "getting-started-with-react",
+    "title": "Getting Started with React",
+    "excerpt": "Learn the basics of React and how to create your first application with this powerful JavaScript library.",
+    "component": "getting-started-with-react",
+    "image": "/images/blog/react-article.jpg",
+    "category": "Development",
+    "author": "John Developer",
+    "date": "2024-01-15",
+    "readTime": "5 min read",
+    "featured": true
+  },
+  {
+    "slug": "web-design-trends-2024",
+    "title": "Web Design Trends for 2024",
+    "excerpt": "Discover the latest trends in web design that will dominate the digital landscape this year.",
+    "component": "web-design-trends-2024",
+    "image": "/images/blog/design-trends.jpg",
+    "category": "Design",
+    "author": "Sarah Designer",
+    "date": "2024-01-10",
+    "readTime": "7 min read",
+    "featured": true
+  },
+  {
+    "slug": "javascript-best-practices",
+    "title": "JavaScript Best Practices for Modern Development",
+    "excerpt": "Essential JavaScript practices that every developer should follow to write clean and maintainable code.",
+    "component": "javascript-best-practices",
+    "image": "/images/blog/javascript.jpg",
+    "category": "Development",
+    "author": "Mike Coder",
+    "date": "2024-01-05",
+    "readTime": "6 min read",
+    "featured": false
+  }
+]

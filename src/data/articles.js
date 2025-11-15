@@ -31,8 +31,8 @@ export const articles = {
     },
     {
       id: 2,
-      slug: "web-design-trends-2024",
-      title: "Web Design Trends for 2024",
+      slug: "web-design-trends-2025",
+      title: "Web Design Trends for 2025",
       excerpt: "Discover the latest trends in web design that will dominate the digital landscape this year.",
       content: `
         <h2>Emerging Design Trends</h2>

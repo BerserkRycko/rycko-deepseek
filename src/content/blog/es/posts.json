@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "comenzando-con-react",
+    "title": "Comenzando con React",
+    "excerpt": "Aprende los conceptos básicos de React y cómo crear tu primera aplicación con esta poderosa librería de JavaScript.",
+    "component": "comenzando-con-react",
+    "image": "/images/blog/react-article.jpg",
+    "category": "Desarrollo",
+    "author": "Juan Desarrollador",
+    "date": "2024-01-15",
+    "readTime": "5 min de lectura",
+    "featured": true
+  },
+  {
+    "slug": "tendencias-diseno-web-2024",
+    "title": "Tendencias de Diseño Web para 2024",
+    "excerpt": "Descubre las últimas tendencias en diseño web que dominarán el panorama digital este año.",
+    "component": "tendencias-diseno-web-2024",
+    "image": "/images/blog/design-trends.jpg",
+    "category": "Diseño",
+    "author": "Sarah Diseñadora",
+    "date": "2024-01-10",
+    "readTime": "7 min de lectura",
+    "featured": true
+  },
+  {
+    "slug": "mejores-practicas-javascript",
+    "title": "Mejores Prácticas de JavaScript para el Desarrollo Moderno",
+    "excerpt": "Prácticas esenciales de JavaScript que todo desarrollador debe seguir para escribir código limpio y mantenible.",
+    "component": "mejores-practicas-javascript",
+    "image": "/images/blog/javascript.jpg",
+    "category": "Desarrollo",
+    "author": "Miguel Programador",
+    "date": "2024-01-05",
+    "readTime": "6 min de lectura",
+    "featured": false
+  }
+]
