@@ -5,6 +5,7 @@ import Footer from '../components/shared/Footer/Footer'
 import Home from '../pages/Home/Home'
 import Blog from '../pages/Blog/Blog'
 import ArticleDetail from '../pages/Blog/ArticleDetail'
+import Gallery from '../pages/Gallery/gallery'
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
             <Route path="/home" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<ArticleDetail />} />
+            <Route path="/gallery" element={<Gallery />} /> {/* Nueva ruta */}
           </Routes>
         </main>
         <Footer />

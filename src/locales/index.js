@@ -5,6 +5,7 @@ export const translations = {
       about: "About",
       services: "Services",
       blog: "Blog",
+      gallery: "Gallery",
       contact: "Contact"
     },
     home: {
@@ -59,6 +60,20 @@ export const translations = {
         videos: "Video content on web development, design, and more"
       }
     },
+     gallery: {
+      title: "My Gallery",
+      subtitle: "A collection of my photography, design, and creative work",
+      categories: "Categories",
+      all: "All",
+      photography: "Photography",
+      design: "Design",
+      illustration: "Illustration",
+      projects: "Projects",
+      pixelart: "pixelart",
+      viewProject: "View Project",
+      noItems: "No items found in this category",
+      filters: "Filters"
+    },
     blog: {
       title: "Our Blog",
       subtitle: "Latest news and articles",
@@ -72,6 +87,7 @@ export const translations = {
       recent: "Recent Articles",
       loading: "Loading posts...", // Nueva
       notFound: "Article Not Found" // Nueva
+      
     },
     footer: {
       description: "Leading the way in innovative solutions and exceptional service delivery.",
@@ -86,6 +102,7 @@ export const translations = {
       about: "Sobre Mí",
       services: "Servicios",
       blog: "Blog",
+      gallery: "Galería", // Nueva entrada
       contact: "Contacto"
     },
     home: {
@@ -153,6 +170,20 @@ export const translations = {
       recent: "Artículos Recientes",
       loading: "Cargando publicaciones...", // Nueva
       notFound: "Artículo No Encontrado" // Nueva
+    },
+    gallery: {
+      title: "Mi Galería",
+      subtitle: "Una colección de mi fotografía, diseño y trabajo creativo",
+      categories: "Categorías",
+      all: "Todos",
+      photography: "Fotografía",
+      design: "Diseño",
+      illustration: "Ilustración",
+      pixelart: "pixelart",
+      projects: "Proyectos",
+      viewProject: "Ver Proyecto",
+      noItems: "No se encontraron elementos en esta categoría",
+      filters: "Filtros"
     },
     footer: {
       description: "Liderando el camino en soluciones innovadoras y entrega de servicio excepcional.",
