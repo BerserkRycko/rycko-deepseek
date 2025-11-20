@@ -7,54 +7,168 @@ const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Datos de la galería - puedes expandir esto con tus proyectos reales
-  const galleryItems = [
+  // Datos de la galería con textos traducidos
+  const galleryItems = useMemo(() => [
     {
       id: 1,
       title: "Doom",
-      description: "Casco del juego Doom",
+      description: t('gallery.doomDescription'),
       category: "pixelart",
       image: "/images/gallery/doom3.png",
-      technologies: ["pixelart", "pixel studio"],
+      technologies: ["Pixel Art", "Pixel Studio"],
       link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
     },
     {
       id: 2,
       title: "Master Chief",
-      description: "Casco del jefe maestro, Jhon 117 del juego Halo",
+      description: t('gallery.masterChiefDescription'),
       category: "pixelart",
       image: "/images/gallery/MasterChief.png",
-      technologies: ["pixelart", "pixel studio"],
+      technologies: ["Pixel Art", "Pixel Studio"],
       link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
     },
     {
       id: 3,
-      title: "Astroanuta",
-      description: "Astronauta",
+      title: "Astronaut",
+      description: t('gallery.astronautDescription'),
       category: "pixelart",
       image: "/images/gallery/Astronauta.png",
-      technologies: ["pixelart", "pixel studio"],
+      technologies: ["Pixel Art", "Pixel Studio"],
       link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
     },
     {
       id: 4,
       title: "Saint Seiya",
-      description: "Seiya with his saint clothes of pegasus",
+      description: t('gallery.saintSeiyaDescription'),
       category: "pixelart",
       image: "/images/gallery/Seya.png",
-      technologies: ["pixelart", "pixel studio"],
+      technologies: ["Pixel Art", "Pixel Studio"],
       link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
     },
-    
-  ];
+    {
+      id: 5,
+      title: "Cable Car View",
+      description: t('gallery.cableCar1Description'),
+      category: "photography",
+      image: "/images/gallery/teleferico.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/antoniocontrer1"
+    },
+    {
+      id: 6,
+      title: "Cable Car Descent",
+      description: t('gallery.cableCar2Description'),
+      category: "photography",
+      image: "/images/gallery/teleferico2.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/antoniocontrer1"
+    },
+    {
+      id: 7,
+      title: "Alocasia",
+      description: t('gallery.alocasiaDescription'),
+      category: "photography",
+      image: "/images/gallery/planta-1.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/214920807/Plant-photography"
+    },
+    {
+      id: 8,
+      title: "Maranta and Spider Plant",
+      description: t('gallery.marantaDescription'),
+      category: "photography",
+      image: "/images/gallery/planta-2.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/214920807/Plant-photography"
+    },
+    {
+      id: 9,
+      title: "Elephant Ear 'Lemon'",
+      description: t('gallery.elephantEarDescription'),
+      category: "photography",
+      image: "/images/gallery/planta-3.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/214920807/Plant-photography"
+    },
+    {
+      id: 10,
+      title: "Fern",
+      description: t('gallery.fernDescription'),
+      category: "photography",
+      image: "/images/gallery/planta-4.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/214920807/Plant-photography"
+    },
+    {
+      id: 11,
+      title: "Hilo Beauty",
+      description: t('gallery.hiloBeautyDescription'),
+      category: "photography",
+      image: "/images/gallery/planta-5.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/214920807/Plant-photography"
+    },
+    {
+      id: 12,
+      title: "Ixora",
+      description: t('gallery.ixoraDescription'),
+      category: "photography",
+      image: "/images/gallery/planta-6.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/214920807/Plant-photography"
+    },
+    {
+      id: 13,
+      title: "Colocasia 'Pharaoh's Mask'",
+      description: t('gallery.colocasiaDescription'),
+      category: "photography",
+      image: "/images/gallery/planta-7.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/214920807/Plant-photography"
+    },
+    {
+      id: 14,
+      title: "Benito Juarez Monument",
+      description: t('gallery.juarezMonumentDescription'),
+      category: "photography",
+      image: "/images/gallery/place.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/213738239/Photography-street-Orizaba"
+    },
+    {
+      id: 15,
+      title: "Orc Boss",
+      description: t('gallery.orcBossDescription'),
+      category: "photography",
+      image: "/images/gallery/warhammer-1.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/222016561/Photos-of-paint-shop-model-making-toys"
+    },
+    {
+      id: 16,
+      title: "Tyranid",
+      description: t('gallery.tyranid1Description'),
+      category: "photography",
+      image: "/images/gallery/warhammer-2.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/222016561/Photos-of-paint-shop-model-making-toys"
+    },
+    {
+      id: 17,
+      title: "Tyranid Warrior",
+      description: t('gallery.tyranid2Description'),
+      category: "photography",
+      image: "/images/gallery/warhammer-3.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/222016561/Photos-of-paint-shop-model-making-toys"
+    }
+  ], [t]);
 
   // Categorías disponibles
   const categories = [
     { key: 'all', label: t('gallery.all') },
     { key: 'photography', label: t('gallery.photography') },
-    { key: 'design', label: t('gallery.design') },
-    { key: 'illustration', label: t('gallery.illustration') },
-    { key: 'pixelart', label: t('gallery.pixelart')}
+    { key: 'pixelart', label: t('gallery.pixelart') }
   ];
 
   // Filtrar items por categoría
@@ -162,7 +276,12 @@ const Gallery = () => {
                   <span key={index} className="tech-tag">{tech}</span>
                 ))}
               </div>
-              <a href={selectedImage.link} className="project-link">
+              <a 
+                href={selectedImage.link} 
+                className="project-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {t('gallery.viewProject')}
               </a>
             </div>

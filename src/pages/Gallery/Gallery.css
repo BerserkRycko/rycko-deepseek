@@ -30,6 +30,7 @@
   margin-bottom: 1.5rem;
   font-weight: 700;
   position: relative;
+  color: white!important;
   z-index: 2;
 }
 
@@ -161,6 +162,7 @@
 .item-title {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
+  color: white!important;
   font-weight: 600;
 }
 
