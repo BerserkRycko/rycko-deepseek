@@ -5,7 +5,7 @@ import Footer from '../components/shared/Footer/Footer'
 import Home from '../pages/Home/Home'
 import Blog from '../pages/Blog/Blog'
 import ArticleDetail from '../pages/Blog/ArticleDetail'
-import Gallery from '../pages/Gallery/gallery'
+import Gallery from '../pages/Gallery/Gallery'
 
 const AppRouter = () => {
   return (
