@@ -107,11 +107,59 @@ export const translations = {
       notFound: "Article Not Found" // Nueva
       
     },
+    contact: {
+      title: "Get In Touch",
+      subtitle: "Let's work together to bring your ideas to life",
+      name: "Your Name",
+      email: "Your Email",
+      subject: "Subject",
+      message: "Your Message",
+      send: "Send Message",
+      sending: "Sending...",
+      success: "Message sent successfully!",
+      error: "Error sending message. Please try again.",
+      required: "This field is required",
+      emailInvalid: "Please enter a valid email",
+      contactInfo: "Contact Information",
+      location: "Orizaba, Veracruz, Mexico",
+      availability: "Available for freelance work",
+      responseTime: "I typically respond within 24 hours"
+    },
     footer: {
       description: "Leading the way in innovative solutions and exceptional service delivery.",
       quickLinks: "Quick Links",
       contact: "Contact",
       rights: "All rights reserved."
+    },
+    about: {
+      title: "About Rycko",
+      subtitle: "Web Developer & Creative Professional",
+      storyTitle: "My Story",
+      missionTitle: "My Mission",
+      skillsTitle: "Skills & Expertise",
+      experienceTitle: "Professional Journey",
+      servicesTitle: "Services I Offer",
+      contactTitle: "Let's Work Together",
+      story: "My name is Ricardo, I'm a web developer dedicated to helping businesses improve their services, communication, and online presence. I'm passionate about learning and applying my knowledge across multiple creative and technical fields including design, web development, marketing, photography, and illustration.",
+      mission: "I believe in creating digital solutions that not only look great but also solve real business problems. My approach combines technical expertise with creative thinking to deliver results that drive growth and engagement.",
+      services: {
+        webDevelopment: "Custom WordPress & React.js Websites",
+        marketing: "Email Marketing & Rich Media Ads",
+        technical: "Technical Support & Problem Solving",
+        hosting: "Hosting Services Configuration",
+        analytics: "Google Analytics & Search Console Setup",
+        tools: "CRM, RPM & Business Tools Integration"
+      },
+      skills: {
+        development: "Web Development",
+        design: "UI/UX Design",
+        photography: "Photography",
+        marketing: "Digital Marketing",
+        consulting: "Technical Consulting",
+        illustration: "Digital Illustration"
+      },
+      cta: "Ready to transform your digital presence?",
+      ctaButton: "Get In Touch"
     }
   },
   es: {
@@ -220,6 +268,54 @@ export const translations = {
       orcBossDescription: "Jefe Orco pintado a mano en Orizaba, Veracruz.",
       tyranid1Description: "Tiranido pintado a mano del juego Warhammer 40k en Orizaba, Veracruz.",
       tyranid2Description: "Tiranido pintado a mano del juego Warhammer 40k en Orizaba, Veracruz."
+    },
+    about: {
+      title: "Sobre Rycko",
+      subtitle: "Desarrollador Web & Profesional Creativo",
+      storyTitle: "Mi Historia",
+      missionTitle: "Mi Misión",
+      skillsTitle: "Habilidades y Experiencia",
+      experienceTitle: "Mi Trayectoria",
+      servicesTitle: "Servicios que Ofrezco",
+      contactTitle: "Trabajemos Juntos",
+      story: "Me llamo Ricardo, soy programador web dedicado a ayudar a las empresas a mejorar sus servicios, comunicación y presencia en línea. Soy un entusiasta por aprender y aplicar mis conocimientos en múltiples campos creativos y técnicos incluyendo diseño, desarrollo web, marketing, fotografía e ilustración.",
+      mission: "Creo en crear soluciones digitales que no solo se vean excelentes sino que también resuelvan problemas reales de negocio. Mi enfoque combina experiencia técnica con pensamiento creativo para entregar resultados que impulsen el crecimiento y engagement.",
+      services: {
+        webDevelopment: "Sitios Web Personalizados en WordPress & React.js",
+        marketing: "Email Marketing & Anuncios Rich Media",
+        technical: "Soporte Técnico & Resolución de Problemas",
+        hosting: "Configuración de Servicios de Hosting",
+        analytics: "Configuración de Google Analytics & Search Console",
+        tools: "Integración de CRM, RPM & Herramientas de Negocio"
+      },
+      skills: {
+        development: "Desarrollo Web",
+        design: "Diseño UI/UX",
+        photography: "Fotografía",
+        marketing: "Marketing Digital",
+        consulting: "Consultoría Técnica",
+        illustration: "Ilustración Digital"
+      },
+      cta: "¿Listo para transformar tu presencia digital?",
+      ctaButton: "Contáctame"
+    },
+    contact: {
+      title: "Ponte en Contacto",
+      subtitle: "Trabajemos juntos para dar vida a tus ideas",
+      name: "Tu Nombre",
+      email: "Tu Email",
+      subject: "Asunto",
+      message: "Tu Mensaje",
+      send: "Enviar Mensaje",
+      sending: "Enviando...",
+      success: "¡Mensaje enviado exitosamente!",
+      error: "Error al enviar el mensaje. Por favor intenta de nuevo.",
+      required: "Este campo es requerido",
+      emailInvalid: "Por favor ingresa un email válido",
+      contactInfo: "Información de Contacto",
+      location: "Orizaba, Veracruz, México",
+      availability: "Disponible para trabajo freelance",
+      responseTime: "Normalmente respondo en menos de 24 horas"
     },
     footer: {
       description: "Liderando el camino en soluciones innovadoras y entrega de servicio excepcional.",

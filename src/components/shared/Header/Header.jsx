@@ -24,7 +24,7 @@ const Header = () => {
                 <Link to="/" className="nav-link">{t('header.home')}</Link>
               </li>
               <li>
-                <a href="#about" className="nav-link">{t('header.about')}</a>
+                <a href="/about" className="nav-link">{t('header.about')}</a>
               </li>
               <li>
                 <Link to="/blog" className="nav-link">{t('header.blog')}</Link>
@@ -33,7 +33,7 @@ const Header = () => {
                 <Link to="/gallery" className="nav-link">{t('header.gallery')}</Link>
               </li>
               <li>
-                <a href="#contact" className="nav-link">{t('header.contact')}</a>
+                <a href="/contact" className="nav-link">{t('header.contact')}</a>
               </li>
             </ul>
           </nav>

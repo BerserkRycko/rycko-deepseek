@@ -1,0 +1,28 @@
+/* src/components/CookieBanner.css */
+.cookie-banner {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.cookie-btn:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.reject-btn:hover {
+  background-color: #f8f9fa !important;
+}
+
+.accept-btn:hover {
+  background-color: #0056b3 !important;
+}
