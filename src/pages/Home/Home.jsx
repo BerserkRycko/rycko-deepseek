@@ -21,9 +21,9 @@ const Home = () => {
 
   // Redes sociales
   const socialLinks = [
-    { name: 'Twitter', icon: '🐦', url: 'https://twitter.com/rycko' },
-    { name: 'Instagram', icon: '📸', url: 'https://instagram.com/rycko' },
-    { name: 'YouTube', icon: '🎥', url: 'https://youtube.com/rycko' },
+    { name: 'X', icon: '🐦', url: 'https://x.com/_rycko' },
+    { name: 'Instagram', icon: '📸', url: 'https://instagram.com/rycko.online' },
+    { name: 'YouTube', icon: '🎥', url: 'https://www.youtube.com/@rycko-everyweb' },
     { name: 'LinkedIn', icon: '💼', url: 'https://linkedin.com/in/rycko' }
   ];
 
