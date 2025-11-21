@@ -1,7 +1,7 @@
 // src/components/Analytics/Analytics.jsx
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { pageview } from '../../utils/analytics';
+import { pageview } from '../../../utils/analytics';
 
 const Analytics = () => {
   const location = useLocation();
