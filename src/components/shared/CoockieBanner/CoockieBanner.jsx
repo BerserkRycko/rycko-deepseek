@@ -1,97 +1,115 @@
 // src/components/CookieBanner.jsx
 import React, { useState, useEffect } from 'react';
-import './CookieBanner.css'; // Opcional: para estilos CSS
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
-    // Verificar si ya hay consentimiento
-    const cookieConsent = localStorage.getItem('cookieConsent');
-    console.log('Cookie consent value:', cookieConsent); // Para depuración
-    
-    if (!cookieConsent) {
-      // Pequeño delay para asegurar que el DOM esté listo
-      setTimeout(() => {
-        setShowBanner(true);
-      }, 1000);
-    }
+    // Verificar si ya hay consentimiento después de que el componente se monte
+    const checkConsent = () => {
+      const cookieConsent = localStorage.getItem('cookieConsent');
+      console.log('Current consent:', cookieConsent);
+      
+      if (!cookieConsent) {
+        // Pequeño delay para mejor UX
+        setTimeout(() => {
+          setShowBanner(true);
+        }, 1500);
+      }
+    };
+
+    checkConsent();
   }, []);
 
   const acceptCookies = () => {
     localStorage.setItem('cookieConsent', 'accepted');
     localStorage.setItem('cookieConsentDate', new Date().toISOString());
     setShowBanner(false);
-    console.log('Cookies accepted'); // Para depuración
+    console.log('Cookies accepted');
+    
+    // Aquí puedes inicializar Google Analytics u otras cookies si las usas
+    // initializeAnalytics();
   };
 
   const rejectCookies = () => {
     localStorage.setItem('cookieConsent', 'rejected');
     localStorage.setItem('cookieConsentDate', new Date().toISOString());
     setShowBanner(false);
-    // Limpiar cookies existentes si las hay
-    document.cookie.split(";").forEach(function(c) {
-      document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+    
+    // Limpiar cookies existentes
+    clearAllCookies();
+    console.log('Cookies rejected');
+  };
+
+  const clearAllCookies = () => {
+    // Limpiar cookies
+    document.cookie.split(";").forEach((c) => {
+      document.cookie = c
+        .replace(/^ +/, "")
+        .replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
     });
+    
+    // Limpiar almacenamiento local (excepto el consentimiento)
+    const consent = localStorage.getItem('cookieConsent');
+    const consentDate = localStorage.getItem('cookieConsentDate');
     localStorage.clear();
     sessionStorage.clear();
-    console.log('Cookies rejected'); // Para depuración
+    
+    // Restaurar el consentimiento
+    if (consent) {
+      localStorage.setItem('cookieConsent', consent);
+      localStorage.setItem('cookieConsentDate', consentDate);
+    }
   };
 
-  const openPrivacyPolicy = () => {
-    window.open('/privacidad', '_blank');
+  const openPolicy = (path) => {
+    window.open(path, '_blank');
   };
 
-  const openCookiesPolicy = () => {
-    window.open('/cookies', '_blank');
-  };
-
-  // Si no mostrar banner, retornar null
   if (!showBanner) {
     return null;
   }
 
   return (
-    <div className="cookie-banner" style={bannerStyles}>
-      <div className="cookie-content" style={contentStyles}>
-        <div className="cookie-text" style={textStyles}>
-          <h3 style={{ margin: '0 0 10px 0', fontSize: '18px' }}>🍪 Uso de Cookies</h3>
-          <p style={{ margin: '0 0 15px 0', fontSize: '14px', lineHeight: '1.4' }}>
-            Utilizamos cookies esenciales y tecnologías similares para mejorar su experiencia 
-            en nuestro sitio web. Las cookies nos ayudan a entender cómo interactúa con nuestra 
-            aplicación y a mejorar nuestro servicio.
+    <div style={bannerStyles}>
+      <div style={contentStyles}>
+        <div style={textStyles}>
+          <h3 style={{ margin: '0 0 10px 0', fontSize: '18px', color: '#333' }}>
+            🍪 Uso de Cookies
+          </h3>
+          <p style={{ margin: '0 0 15px 0', fontSize: '14px', lineHeight: '1.4', color: '#666' }}>
+            Utilizamos cookies esenciales para el funcionamiento de la aplicación. 
+            Estas cookies nos ayudan a mejorar su experiencia y a entender cómo usa nuestro sitio.
           </p>
           <div style={{ fontSize: '13px', marginBottom: '15px' }}>
-            <span 
-              style={{ color: '#007bff', cursor: 'pointer', textDecoration: 'underline' }}
-              onClick={openPrivacyPolicy}
+            <button 
+              onClick={() => openPolicy('/privacidad')}
+              style={linkButtonStyles}
             >
               Política de Privacidad
-            </span>
-            {' · '}
-            <span 
-              style={{ color: '#007bff', cursor: 'pointer', textDecoration: 'underline' }}
-              onClick={openCookiesPolicy}
+            </button>
+            <span style={{ margin: '0 10px', color: '#ccc' }}>|</span>
+            <button 
+              onClick={() => openPolicy('/cookies')}
+              style={linkButtonStyles}
             >
               Política de Cookies
-            </span>
+            </button>
           </div>
         </div>
         
-        <div className="cookie-buttons" style={buttonsStyles}>
+        <div style={buttonsStyles}>
           <button 
             onClick={rejectCookies}
             style={rejectButtonStyles}
-            className="cookie-btn reject-btn"
           >
             Rechazar
           </button>
           <button 
             onClick={acceptCookies}
             style={acceptButtonStyles}
-            className="cookie-btn accept-btn"
           >
-            Aceptar Cookies
+            Aceptar
           </button>
         </div>
       </div>
@@ -99,7 +117,7 @@ const CookieBanner = () => {
   );
 };
 
-// Estilos en línea (puedes moverlos a CSS)
+// Estilos
 const bannerStyles = {
   position: 'fixed',
   bottom: '0',
@@ -108,8 +126,8 @@ const bannerStyles = {
   backgroundColor: '#ffffff',
   padding: '20px',
   borderTop: '2px solid #007bff',
-  boxShadow: '0 -4px 12px rgba(0, 0, 0, 0.1)',
-  zIndex: 9999,
+  boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.15)',
+  zIndex: 10000,
   fontFamily: 'Arial, sans-serif'
 };
 
@@ -130,8 +148,18 @@ const textStyles = {
 
 const buttonsStyles = {
   display: 'flex',
-  gap: '10px',
+  gap: '12px',
   flexShrink: 0
+};
+
+const linkButtonStyles = {
+  background: 'none',
+  border: 'none',
+  color: '#007bff',
+  textDecoration: 'underline',
+  cursor: 'pointer',
+  fontSize: '13px',
+  padding: '0'
 };
 
 const rejectButtonStyles = {
@@ -142,7 +170,8 @@ const rejectButtonStyles = {
   borderRadius: '6px',
   cursor: 'pointer',
   fontSize: '14px',
-  fontWeight: '500'
+  fontWeight: '500',
+  minWidth: '80px'
 };
 
 const acceptButtonStyles = {
@@ -153,7 +182,9 @@ const acceptButtonStyles = {
   borderRadius: '6px',
   cursor: 'pointer',
   fontSize: '14px',
-  fontWeight: '500'
+  fontWeight: '500',
+  minWidth: '80px'
 };
+
 
 export default CookieBanner;

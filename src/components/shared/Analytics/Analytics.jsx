@@ -1,4 +1,4 @@
-// src/components/Analytics/Analytics.jsx
+
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { pageview } from '../../../utils/analytics';

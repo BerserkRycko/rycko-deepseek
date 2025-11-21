@@ -1,5 +1,6 @@
+import { Routes, Route } from 'react-router-dom'
+// ❌ Eliminamos "BrowserRouter as Router" del import de arriba
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from '../components/shared/Header/Header'
 import Footer from '../components/shared/Footer/Footer'
 import Home from '../pages/Home/Home'
@@ -13,26 +14,29 @@ import CookiesPolicy from '../pages/CoockiePolicy/CoockiePolicy'
 
 const AppRouter = () => {
   return (
-    <Router>
-      <div className="app">
-        <Header />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<ArticleDetail />} />
-            <Route path="/gallery" element={<Gallery />} /> {/* Nueva ruta */}
-            // Asegúrate de tener esta ruta
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path='/private-policy' element={<PrivacyPolicy />} />
-            <Route path='/cookies-policy' element={<CookiesPolicy />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    // ❌ Eliminamos <Router> aquí
+    <div className="app">
+      <Header />
+      <main className="main-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<ArticleDetail />} />
+          <Route path="/gallery" element={<Gallery />} />
+          
+          {/* Corregí este comentario, debe ir entre llaves */}
+          {/* Asegúrate de tener esta ruta */}
+          
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path='/private-policy' element={<PrivacyPolicy />} />
+          <Route path='/cookies-policy' element={<CookiesPolicy />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
+    // ❌ Eliminamos </Router> aquí
   )
 }
 
