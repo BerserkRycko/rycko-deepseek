@@ -117,13 +117,15 @@ export const translations = {
       send: "Send Message",
       sending: "Sending...",
       success: "Message sent successfully!",
+      successMessage: "Thank you for your message! I'll get back to you within 24 hours.",
       error: "Error sending message. Please try again.",
       required: "This field is required",
       emailInvalid: "Please enter a valid email",
       contactInfo: "Contact Information",
       location: "Orizaba, Veracruz, Mexico",
       availability: "Available for freelance work",
-      responseTime: "I typically respond within 24 hours"
+      responseTime: "I typically respond within 24 hours",
+      close: "Close"
     },
     footer: {
       description: "Leading the way in innovative solutions and exceptional service delivery.",
@@ -309,13 +311,15 @@ export const translations = {
       send: "Enviar Mensaje",
       sending: "Enviando...",
       success: "¡Mensaje enviado exitosamente!",
+      successMessage: "¡Gracias por tu mensaje! Te responderé en menos de 24 horas.",
       error: "Error al enviar el mensaje. Por favor intenta de nuevo.",
       required: "Este campo es requerido",
       emailInvalid: "Por favor ingresa un email válido",
       contactInfo: "Información de Contacto",
       location: "Orizaba, Veracruz, México",
       availability: "Disponible para trabajo freelance",
-      responseTime: "Normalmente respondo en menos de 24 horas"
+      responseTime: "Normalmente respondo en menos de 24 horas",
+      close: "Cerrar"
     },
     footer: {
       description: "Liderando el camino en soluciones innovadoras y entrega de servicio excepcional.",

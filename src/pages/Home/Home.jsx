@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
+import { Link } from 'react-router-dom';
 import './Home.module.css';
 
 const Home = () => {
@@ -36,8 +37,8 @@ const Home = () => {
               <h1 className="hero-title">{t('home.heroTitle')}</h1>
               <p className="hero-description">{t('home.heroDescription')}</p>
               <div className="hero-actions">
-                <button className="btn btn-primary">{t('home.ctaButton')}</button>
-                <button className="btn btn-outline">View Blog</button>
+                <Link to="/contact" className="btn btn-primary">{t('home.ctaButton')}</Link>
+                <Link to="/blog" className="btn btn-outline">View Blog</Link>
               </div>
             </div>
             <div className="hero-visual">

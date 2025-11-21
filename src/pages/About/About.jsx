@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import { Link } from 'react-router-dom';
 import './About.css';
@@ -79,14 +78,14 @@ const About = () => {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="container">
-          <div className="hero-content">
+          <div className="hero-content-about">
             <div className="hero-text">
               <h1 className="hero-title">{t('about.title')}</h1>
               <p className="hero-subtitle">{t('about.subtitle')}</p>
               <p className="hero-description">
                 {t('about.story')}
               </p>
-              <div className="hero-actions">
+              <div className="hero-actions-about">
                 <Link to="/contact" className="btn btn-primary">
                   {t('about.ctaButton')}
                 </Link>

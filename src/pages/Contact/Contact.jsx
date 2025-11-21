@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import './Contact.css';
 
+
 const Contact = () => {
+  
   const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
@@ -11,7 +13,7 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // null, 'success', 'error'
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -23,7 +25,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus(null);
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -42,42 +43,50 @@ const Contact = () => {
       const result = await response.json();
       
       if (result.success) {
-        setSubmitStatus('success');
+        // Mostrar popup de éxito
+        setShowSuccessPopup(true);
+        // Resetear formulario
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
-        setSubmitStatus('error');
+        // Mostrar error (puedes agregar un popup de error también)
+        alert(t('contact.error'));
       }
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
-      setSubmitStatus('error');
+      alert(t('contact.error'));
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const closePopup = () => {
+    setShowSuccessPopup(false);
   };
 
   const contactMethods = [
     {
       icon: '📧',
       title: 'Email',
-      value: 'rycko.arcr@gmail.com',
-      link: 'mailto:rycko.arcr@gmail.com'
+      value: 'tu-email@ejemplo.com',
+      link: 'mailto:tu-email@ejemplo.com'
     },
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/rycko',
-      link: 'https://linkedin.com/in/rycko'
+      value: 'linkedin.com/in/tu-perfil',
+      link: 'https://linkedin.com/in/tu-perfil'
     },
     {
       icon: '🐦',
-      title: 'X',
-      value: '@_rycko',
-      link: 'https://x.com/_rycko'
+      title: 'Twitter',
+      value: '@tu-usuario',
+      link: 'https://twitter.com/tu-usuario'
     },
     {
       icon: '📱',
       title: 'WhatsApp',
-      value: '+52 1 2722653873',
-      link: 'https://wa.me/5212722653873'
+      value: '+52 1 123 456 7890',
+      link: 'https://wa.me/5211234567890'
     }
   ];
 
@@ -130,19 +139,6 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="contact-form-container">
             <form onSubmit={handleSubmit} className="contact-form">
-              {/* Status Messages */}
-              {submitStatus === 'success' && (
-                <div className="alert alert-success">
-                  ✅ {t('contact.success')}
-                </div>
-              )}
-              
-              {submitStatus === 'error' && (
-                <div className="alert alert-error">
-                  ❌ {t('contact.error')}
-                </div>
-              )}
-
               <div className="form-group">
                 <label htmlFor="name">{t('contact.name')} *</label>
                 <input
@@ -219,6 +215,20 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      {/* Popup de éxito */}
+      {showSuccessPopup && (
+        <div className="popup-overlay" onClick={closePopup}>
+          <div className="success-popup" onClick={(e) => e.stopPropagation()}>
+            <div className="popup-icon">✅</div>
+            <h3 className="popup-title">{t('contact.success')}</h3>
+            <p className="popup-message">{t('contact.successMessage')}</p>
+            <button className="popup-close-btn" onClick={closePopup}>
+              {t('contact.close')}
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

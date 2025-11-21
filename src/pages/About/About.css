@@ -10,7 +10,7 @@
   padding: 100px 0;
 }
 
-.hero-content {
+.hero-content-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
@@ -36,7 +36,7 @@
   opacity: 0.9;
 }
 
-.hero-actions {
+.hero-actions-about {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -326,7 +326,7 @@
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: calc(50% - 4rem);
+  width: 100%;
 }
 
 .timeline-year {
@@ -393,7 +393,7 @@
     font-size: 2.5rem;
   }
   
-  .hero-actions {
+  .hero-actions-about {
     justify-content: center;
   }
   

@@ -888,3 +888,8 @@ a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-medium);
 }
+.hero-actions{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
