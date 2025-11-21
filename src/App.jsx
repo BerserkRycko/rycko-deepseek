@@ -1,6 +1,6 @@
 import { LanguageProvider } from './locales/LanguageProviders';
 import AppRouter from './routes/AppRoutes';
-import Analytics from './components/Analytics/Analytics';
+import Analytics from './components/shared/Analytics/Analytics';
 import CookieBanner from './components/shared/CoockieBanner/CoockieBanner';
 
 import './styles/global.css';
