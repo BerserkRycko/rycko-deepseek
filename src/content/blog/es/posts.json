@@ -7,8 +7,20 @@
   "image": "/images/blog/solucion-error-404.png",
   "category": "Desarrollo",
   "author": "Rycko",
-  "date": "2024-01-28",
+  "date": "2025-10-28",
   "readTime": "5 min de lectura",
+  "featured": true
+},
+{
+  "slug": "fotografia-plantas-belleza-naturaleza",
+  "title": "Capturando la Belleza de la Naturaleza: Mis Fotos Favoritas de Plantas",
+  "excerpt": "Acompáñame en un viaje fotográfico a través del diverso y vibrante mundo de las plantas. Descubre las historias detrás de mis fotos favoritas de plantas y conoce mi pasión por la fotografía de naturaleza.",
+  "component": "fotografia-plantas-belleza-naturaleza",
+  "image": "/images/gallery/planta-5.jpg",
+  "category": "Fotografía",
+  "author": "Rycko",
+  "date": "2025-11-26",
+  "readTime": "6 min de lectura",
   "featured": true
 }
 ]

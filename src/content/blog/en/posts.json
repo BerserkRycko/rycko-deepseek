@@ -7,8 +7,21 @@
   "image": "/images/blog/solucion-error-404.png",
   "category": "Development",
   "author": "Rycko",
-  "date": "2024-01-28",
+  "date": "2025-10-28",
   "readTime": "5 min read",
   "featured": true
+},
+{
+  "slug": "plant-photography-beauty-nature",
+  "title": "Capturing the Beauty of Nature: My Favorite Plant Photos",
+  "excerpt": "Join me on a photographic journey through the diverse and vibrant world of plants. Discover the stories behind my favorite plant photos and learn about my passion for nature photography.",
+  "component": "plant-photography-beauty-nature",
+  "image": "/images/gallery/planta-5.jpg",
+  "category": "Photography",
+  "author": "Rycko",
+  "date": "2025-11-26",
+  "readTime": "6 min read",
+  "featured": true
 }
+
 ]
