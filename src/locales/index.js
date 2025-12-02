@@ -90,7 +90,9 @@ export const translations = {
       juarezMonumentDescription: "Benito Juarez Monument in the port of Veracruz, Mexico.",
       orcBossDescription: "Hand-painted Orc Boss in Orizaba, Veracruz.",
       tyranid1Description: "Hand-painted Tyranid from Warhammer 40k game in Orizaba, Veracruz.",
-      tyranid2Description: "Hand-painted Tyranid from Warhammer 40k game in Orizaba, Veracruz."
+      tyranid2Description: "Hand-painted Tyranid from Warhammer 40k game in Orizaba, Veracruz.",
+      arcangelDescription: "Estatue of Archangel Michael defeating the demon, located in front of the Cathedral of Saint Michael the Archangel, in the park where the Palacio de Hierro building is situated in Orizaba, Veracruz.",
+      carruselDescription: "A carousel in the main square in front of Orizaba's Municipal Palace, Veracruz."
     },
     blog: {
       title: "Our Blog",
@@ -269,7 +271,9 @@ export const translations = {
       juarezMonumentDescription: "Monumento a Benito Juárez en el puerto de Veracruz, México.",
       orcBossDescription: "Jefe Orco pintado a mano en Orizaba, Veracruz.",
       tyranid1Description: "Tiranido pintado a mano del juego Warhammer 40k en Orizaba, Veracruz.",
-      tyranid2Description: "Tiranido pintado a mano del juego Warhammer 40k en Orizaba, Veracruz."
+      tyranid2Description: "Tiranido pintado a mano del juego Warhammer 40k en Orizaba, Veracruz.",
+      arcangelDescription: "Estatua del Arcangel Miguel derrotando al demonio, ubicada enfrente de la catedral de San Miguel Arcangel, en el parque donde se encuentra el Palacio de Hierro en Orizaba, Veracruz.",
+      carruselDescription: "Foto de un carrusel ubicado enfrente del palacio municipal de Orizaba, Veracruz."
     },
     about: {
       title: "Sobre Rycko",

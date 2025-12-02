@@ -161,6 +161,24 @@ const Gallery = () => {
       image: "/images/gallery/warhammer-3.jpg",
       technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
       link: "https://www.behance.net/gallery/222016561/Photos-of-paint-shop-model-making-toys"
+    },
+    {
+      id: 18,
+      title: "Arcangel",
+      description: t('gallery.arcangelDescription'),
+      category: "photography",
+      image: "/images/gallery/arcangel.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/213738239/Photography-street-Orizaba/modules/1215942381"
+    },
+    {
+      id: 19,
+      title: "Carrusel",
+      description: t('gallery.carruselDescription'),
+      category: "photography",
+      image: "/images/gallery/carnival.jpg",
+      technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
+      link: "https://www.behance.net/gallery/213738239/Photography-street-Orizaba/modules/1215942379"
     }
   ], [t]);
 
