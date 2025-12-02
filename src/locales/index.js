@@ -60,7 +60,7 @@ export const translations = {
         videos: "Video content on web development, design, and more"
       }
     },
-     gallery: {
+    gallery: {
       title: "My Gallery",
       subtitle: "A collection of my photography, pixel art, and creative work",
       categories: "Categories",
@@ -105,9 +105,8 @@ export const translations = {
       noArticles: "No articles found",
       featured: "Featured Articles",
       recent: "Recent Articles",
-      loading: "Loading posts...", // Nueva
-      notFound: "Article Not Found" // Nueva
-      
+      loading: "Loading posts...",
+      notFound: "Article Not Found"
     },
     contact: {
       title: "Get In Touch",
@@ -137,30 +136,30 @@ export const translations = {
     },
     about: {
       title: "About Rycko",
-      subtitle: "Web Developer & Creative Professional",
+      subtitle: "Webmaster & Full-Stack Developer",
       storyTitle: "My Story",
       missionTitle: "My Mission",
       skillsTitle: "Skills & Expertise",
       experienceTitle: "Professional Journey",
       servicesTitle: "Services I Offer",
       contactTitle: "Let's Work Together",
-      story: "My name is Ricardo, I'm a web developer dedicated to helping businesses improve their services, communication, and online presence. I'm passionate about learning and applying my knowledge across multiple creative and technical fields including design, web development, marketing, photography, and illustration.",
-      mission: "I believe in creating digital solutions that not only look great but also solve real business problems. My approach combines technical expertise with creative thinking to deliver results that drive growth and engagement.",
+      story: "My name is Ricardo Contreras, I'm a webmaster and full-stack developer dedicated to helping businesses improve their services, communication, and online presence. With over 9 years of experience, I specialize in creating comprehensive digital solutions that drive growth and engagement.",
+      mission: "I believe in creating digital solutions that not only look great but also solve real business problems. My approach combines technical expertise with creative thinking to deliver results that drive growth and engagement across web development, SEO, and digital marketing.",
       services: {
         webDevelopment: "Custom WordPress & React.js Websites",
-        marketing: "Email Marketing & Rich Media Ads",
-        technical: "Technical Support & Problem Solving",
-        hosting: "Hosting Services Configuration",
-        analytics: "Google Analytics & Search Console Setup",
-        tools: "CRM, RPM & Business Tools Integration"
+        emailMarketing: "Email Marketing & Automation",
+        seo: "SEO Strategy & Optimization",
+        automation: "Workflow Automation",
+        analytics: "Analytics & Reporting",
+        ecommerce: "E-commerce Development"
       },
       skills: {
         development: "Web Development",
-        design: "UI/UX Design",
-        photography: "Photography",
-        marketing: "Digital Marketing",
+        seo: "SEO Strategy",
+        emailMarketing: "Email Marketing",
+        automation: "Automation",
         consulting: "Technical Consulting",
-        illustration: "Digital Illustration"
+        serverManagement: "Server Management"
       },
       cta: "Ready to transform your digital presence?",
       ctaButton: "Get In Touch"
@@ -172,7 +171,7 @@ export const translations = {
       about: "Sobre Mí",
       services: "Servicios",
       blog: "Blog",
-      gallery: "Galería", // Nueva entrada
+      gallery: "Galería",
       contact: "Contacto"
     },
     home: {
@@ -238,8 +237,8 @@ export const translations = {
       noArticles: "No se encontraron artículos",
       featured: "Artículos Destacados",
       recent: "Artículos Recientes",
-      loading: "Cargando publicaciones...", // Nueva
-      notFound: "Artículo No Encontrado" // Nueva
+      loading: "Cargando publicaciones...",
+      notFound: "Artículo No Encontrado"
     },
     gallery: {
       title: "Mi Galería",
@@ -277,30 +276,30 @@ export const translations = {
     },
     about: {
       title: "Sobre Rycko",
-      subtitle: "Desarrollador Web & Profesional Creativo",
+      subtitle: "Webmaster & Desarrollador Full-Stack",
       storyTitle: "Mi Historia",
       missionTitle: "Mi Misión",
       skillsTitle: "Habilidades y Experiencia",
-      experienceTitle: "Mi Trayectoria",
+      experienceTitle: "Mi Trayectoria Profesional",
       servicesTitle: "Servicios que Ofrezco",
       contactTitle: "Trabajemos Juntos",
-      story: "Me llamo Ricardo, soy programador web dedicado a ayudar a las empresas a mejorar sus servicios, comunicación y presencia en línea. Soy un entusiasta por aprender y aplicar mis conocimientos en múltiples campos creativos y técnicos incluyendo diseño, desarrollo web, marketing, fotografía e ilustración.",
-      mission: "Creo en crear soluciones digitales que no solo se vean excelentes sino que también resuelvan problemas reales de negocio. Mi enfoque combina experiencia técnica con pensamiento creativo para entregar resultados que impulsen el crecimiento y engagement.",
+      story: "Me llamo Ricardo Contreras, soy webmaster y desarrollador full-stack dedicado a ayudar a las empresas a mejorar sus servicios, comunicación y presencia en línea. Con más de 9 años de experiencia, me especializo en crear soluciones digitales integrales que impulsan el crecimiento y el engagement.",
+      mission: "Creo en crear soluciones digitales que no solo se vean excelentes sino que también resuelvan problemas reales de negocio. Mi enfoque combina experiencia técnica con pensamiento creativo para entregar resultados que impulsen el crecimiento y engagement a través del desarrollo web, SEO y marketing digital.",
       services: {
         webDevelopment: "Sitios Web Personalizados en WordPress & React.js",
-        marketing: "Email Marketing & Anuncios Rich Media",
-        technical: "Soporte Técnico & Resolución de Problemas",
-        hosting: "Configuración de Servicios de Hosting",
-        analytics: "Configuración de Google Analytics & Search Console",
-        tools: "Integración de CRM, RPM & Herramientas de Negocio"
+        emailMarketing: "Email Marketing & Automatización",
+        seo: "Estrategias SEO & Optimización",
+        automation: "Automatización de Flujos de Trabajo",
+        analytics: "Análisis & Reportes",
+        ecommerce: "Desarrollo de E-commerce"
       },
       skills: {
         development: "Desarrollo Web",
-        design: "Diseño UI/UX",
-        photography: "Fotografía",
-        marketing: "Marketing Digital",
+        seo: "Estrategias SEO",
+        emailMarketing: "Email Marketing",
+        automation: "Automatización",
         consulting: "Consultoría Técnica",
-        illustration: "Ilustración Digital"
+        serverManagement: "Administración de Servidores"
       },
       cta: "¿Listo para transformar tu presencia digital?",
       ctaButton: "Contáctame"

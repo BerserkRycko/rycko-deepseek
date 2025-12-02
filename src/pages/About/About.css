@@ -380,7 +380,10 @@
   padding: 15px 30px;
   font-size: 1.1rem;
 }
-
+.placeholder-avatar img{
+  width: 100%;
+  border-radius: 100%;
+}
 /* Responsive Design */
 @media (max-width: 968px) {
   .hero-content {

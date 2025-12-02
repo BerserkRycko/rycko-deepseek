@@ -67,26 +67,26 @@ const Contact = () => {
     {
       icon: '📧',
       title: 'Email',
-      value: 'tu-email@ejemplo.com',
-      link: 'mailto:tu-email@ejemplo.com'
+      value: 'rycko.arcr@gmail.com',
+      link: 'mailto:rycko.arcr@gmail.com'
     },
     {
       icon: '💼',
       title: 'LinkedIn',
-      value: 'linkedin.com/in/tu-perfil',
-      link: 'https://linkedin.com/in/tu-perfil'
+      value: 'linkedin.com/in/rycko',
+      link: 'https://linkedin.com/in/rycko'
     },
     {
-      icon: '🐦',
-      title: 'Twitter',
-      value: '@tu-usuario',
-      link: 'https://twitter.com/tu-usuario'
+      icon: 'X',
+      title: 'X',
+      value: '@_rycko',
+      link: 'https://x.com/_rycko'
     },
     {
       icon: '📱',
       title: 'WhatsApp',
-      value: '+52 1 123 456 7890',
-      link: 'https://wa.me/5211234567890'
+      value: '+52 272 265 3873',
+      link: 'https://wa.me/522722653873'
     }
   ];
 

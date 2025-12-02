@@ -7,12 +7,12 @@ const About = () => {
 
   // Datos de habilidades con iconos y porcentajes
   const skills = [
-    { name: t('about.skills.development'), level: 90, icon: '💻' },
-    { name: t('about.skills.design'), level: 85, icon: '🎨' },
-    { name: t('about.skills.photography'), level: 80, icon: '📷' },
-    { name: t('about.skills.marketing'), level: 75, icon: '📈' },
+    { name: t('about.skills.development'), level: 95, icon: '💻' },
+    { name: t('about.skills.seo'), level: 85, icon: '📈' },
+    { name: t('about.skills.emailMarketing'), level: 90, icon: '📧' },
+    { name: t('about.skills.automation'), level: 80, icon: '⚙️' },
     { name: t('about.skills.consulting'), level: 88, icon: '🔧' },
-    { name: t('about.skills.illustration'), level: 70, icon: '✏️' }
+    { name: t('about.skills.serverManagement'), level: 75, icon: '🖥️' }
   ];
 
   // Servicios ofrecidos
@@ -20,56 +20,66 @@ const About = () => {
     { 
       icon: '🌐', 
       title: t('about.services.webDevelopment'),
-      description: 'Custom websites built with modern technologies for optimal performance and user experience.'
+      description: 'Desarrollo y mantenimiento de sitios web responsivos y optimizados para SEO con React.js, WordPress y tecnologías modernas.'
     },
     { 
       icon: '📧', 
-      title: t('about.services.marketing'),
-      description: 'Strategic email campaigns and engaging rich media advertisements that convert.'
+      title: t('about.services.emailMarketing'),
+      description: 'Creación de campañas de email marketing optimizadas y automatización de flujos con Google Apps Script y otras herramientas.'
     },
     { 
-      icon: '⚙️', 
-      title: t('about.services.technical'),
-      description: 'Comprehensive technical support and problem-solving for your digital challenges.'
+      icon: '🔍', 
+      title: t('about.services.seo'),
+      description: 'Auditorías SEO, estrategias de contenido y técnico para mejorar el posicionamiento orgánico y la visibilidad web.'
     },
     { 
-      icon: '🖥️', 
-      title: t('about.services.hosting'),
-      description: 'Professional hosting setup and configuration for reliable online presence.'
+      icon: '🤖', 
+      title: t('about.services.automation'),
+      description: 'Automatización de procesos y conexión de herramientas digitales (Google Sheets, Meta Ads, etc.) para optimizar flujos de trabajo.'
     },
     { 
       icon: '📊', 
       title: t('about.services.analytics'),
-      description: 'Data-driven insights with proper analytics setup to track and improve performance.'
+      description: 'Configuración de análisis y reporting para seguimiento de desempeño y toma de decisiones basada en datos.'
     },
     { 
-      icon: '🛠️', 
-      title: t('about.services.tools'),
-      description: 'Seamless integration of business tools and systems for operational efficiency.'
+      icon: '🛒', 
+      title: t('about.services.ecommerce'),
+      description: 'Desarrollo de tiendas en línea con pasarelas de pago, gestión de envíos y experiencia de usuario optimizada.'
     }
   ];
 
-  // Timeline de experiencia
+  // Timeline de experiencia basada en tu perfil real
   const timeline = [
     {
+      year: "2025 - Presente",
+      title: "Programador Frontend - Cerebro Smart Media",
+      description: "Desarrollo y mantenimiento del sitio web institucional con React.js y Tailwind CSS. Creación de campañas Rich Media Ads, asesoría en SEO técnico y automatización con Google Apps Script."
+    },
+    {
       year: "2024",
-      title: "Full-Stack Developer & Tech Lead",
-      description: "Leading web development projects and mentoring teams while expanding creative services."
+      title: "Programador de Sistemas - BBVA en México",
+      description: "Desarrollo y mantenimiento de sitios web utilizando Python, Java, JavaScript y PHP. Administración de bases de datos."
     },
     {
-      year: "2022-2023",
-      title: "Senior Web Developer",
-      description: "Specialized in React.js and WordPress development for various clients and industries."
+      year: "2021 - 2023",
+      title: "Desarrollador Web - Foodin'",
+      description: "Desarrollo de sitios web en WordPress y React.js. Programación en PHP y maquetación con HTML, CSS y JavaScript."
     },
     {
-      year: "2020-2021",
-      title: "Web Developer & Digital Marketer",
-      description: "Combined development skills with digital marketing strategies for comprehensive solutions."
+      year: "2018 - 2024",
+      title: "Freelance - Programador Web y Asesor de Marketing Digital",
+      description: "Desarrollo de sitios web, e-commerce, landing pages, email marketing, auditorías SEO y configuración de servidores en CENTOS."
     },
     {
-      year: "2018-2019",
-      title: "Junior Developer & Designer",
-      description: "Started professional journey focusing on frontend development and UI/UX design."
+      year: "2016 - 2018",
+      title: "Programador Web - Beker",
+      description: "Desarrollo de email marketing, landing pages, revistas digitales y gestión de campañas display para Banco Santander."
+    },
+    {
+      year: "2014 - 2015",
+      title: "Programador de Sistemas - Magrico S.A. de C.V.",
+      description: "Desarrollo de sistema de gestión integral con Java y PostgreSQL para administración de pagos, operadores, viajes y generación de reportes."
     }
   ];
 
@@ -90,31 +100,30 @@ const About = () => {
                   {t('about.ctaButton')}
                 </Link>
                 <Link to="/gallery" className="btn btn-outline">
-                  View My Work
+                  Ver Mi Trabajo
                 </Link>
               </div>
             </div>
             <div className="hero-visual">
               <div className="profile-card">
                 <div className="profile-image">
-                  {/* Reemplaza con tu foto */}
-                  <div className="placeholder-avatar">👨‍💻</div>
+                  <div className="placeholder-avatar"><img src="/Ricardo-contreras.png" alt="Ricardo Contreras" /></div>
                 </div>
                 <div className="profile-info">
-                  <h3>Ricardo "Rycko"</h3>
-                  <p>Full-Stack Developer</p>
+                  <h3>Ricardo "Rycko" Contreras</h3>
+                  <p>Webmaster & Full-Stack Developer</p>
                   <div className="profile-stats">
                     <div className="stat">
-                      <span className="stat-number">50+</span>
-                      <span className="stat-label">Projects</span>
+                      <span className="stat-number">9+</span>
+                      <span className="stat-label">Años de Experiencia</span>
                     </div>
                     <div className="stat">
-                      <span className="stat-number">4+</span>
-                      <span className="stat-label">Years</span>
+                      <span className="stat-number">100+</span>
+                      <span className="stat-label">Proyectos</span>
                     </div>
                     <div className="stat">
-                      <span className="stat-number">100%</span>
-                      <span className="stat-label">Satisfaction</span>
+                      <span className="stat-number">360°</span>
+                      <span className="stat-label">Soluciones Digitales</span>
                     </div>
                   </div>
                 </div>
@@ -135,18 +144,18 @@ const About = () => {
             <div className="mission-highlights">
               <div className="highlight">
                 <span className="highlight-icon">🚀</span>
-                <h4>Innovation</h4>
-                <p>Staying updated with the latest technologies and trends</p>
+                <h4>Innovación</h4>
+                <p>Implementando las últimas tecnologías y tendencias digitales</p>
               </div>
               <div className="highlight">
                 <span className="highlight-icon">💡</span>
-                <h4>Creativity</h4>
-                <p>Combining technical skills with artistic vision</p>
+                <h4>Soluciones Integrales</h4>
+                <p>Combinando desarrollo, SEO y marketing para resultados completos</p>
               </div>
               <div className="highlight">
                 <span className="highlight-icon">🤝</span>
-                <h4>Collaboration</h4>
-                <p>Working closely with clients to achieve their goals</p>
+                <h4>Colaboración</h4>
+                <p>Trabajando codo a codo con clientes para alcanzar sus objetivos</p>
               </div>
             </div>
           </div>
@@ -223,7 +232,7 @@ const About = () => {
                 {t('about.ctaButton')}
               </Link>
               <Link to="/blog" className="btn btn-large btn-outline">
-                Read My Blog
+                Leer Mi Blog
               </Link>
             </div>
           </div>
