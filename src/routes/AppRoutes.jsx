@@ -11,6 +11,7 @@ import About from '../pages/About/About'
 import Contact from '../pages/Contact/Contact'
 import PrivacyPolicy from '../pages/PrivatePolicy/PrivatePolicy'
 import CookiesPolicy from '../pages/CoockiePolicy/CoockiePolicy'
+import ServicesPage from '../pages/Services/Services.jsx'
 
 const AppRouter = () => {
   return (
@@ -30,6 +31,7 @@ const AppRouter = () => {
           
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<ServicesPage />} />
           <Route path='/private-policy' element={<PrivacyPolicy />} />
           <Route path='/cookies-policy' element={<CookiesPolicy />} />
         </Routes>

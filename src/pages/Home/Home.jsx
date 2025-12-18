@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../../hooks/useLanguage';
 import { Link } from 'react-router-dom';
+import Wido from '../../components/shared/WhatIDo/Whatido';
 import './Home.module.css';
 
 const Home = () => {
@@ -38,7 +39,7 @@ const Home = () => {
               <p className="hero-description">{t('home.heroDescription')}</p>
               <div className="hero-actions">
                 <Link to="/contact" className="btn btn-primary">{t('home.ctaButton')}</Link>
-                <Link to="/blog" className="btn btn-outline">View Blog</Link>
+                <Link to="/blog" className="btn btn-outline">{t('home.ctaButtonB')}</Link>
               </div>
             </div>
             <div className="hero-visual">
@@ -52,30 +53,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* About Section */}
-      <section className="about-section">
-        <div className="container">
-          <div className="about-content">
-            <div className="about-text">
-              <h2>{t('home.aboutTitle')}</h2>
-              <p>{t('home.aboutDescription')}</p>
-            </div>
-            <div className="about-visual">
-              <div className="code-window">
-                <div className="window-header">
-                  <div className="window-dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Wido />
+      
 
       {/* Interests Section */}
       <section className="interests-section">
@@ -131,7 +110,7 @@ const Home = () => {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
-          <div className="cta-content">
+          <div className="cta-content-home">
             <h2>{t('home.joinTitle')}</h2>
             <p>{t('home.joinDescription')}</p>
             

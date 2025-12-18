@@ -10,8 +10,9 @@ export const translations = {
     },
     home: {
       heroTitle: "Welcome to My World: Where Technology Meets Creativity",
-      heroDescription: "Hello, I'm Rycko, a passionate web developer and tech lead with a keen interest in exploring the intersections of technology, art, and design.",
-      ctaButton: "Explore My Work",
+      heroDescription: "Web development and digital consulting to transform your ideas into clear, beautiful websites ready to rank on Google.",
+      ctaButton: "Work with me",
+      ctaButtonB: "Read my blog",
       aboutTitle: "About Me",
       aboutDescription: "As a seasoned web developer, I've had the privilege of working on various projects that have honed my skills in crafting innovative digital solutions. Currently, I'm leading a team as a tech lead, where I get to mentor and collaborate with talented individuals to push the boundaries of what's possible on the web.",
       interestsTitle: "My Interests & Passions",
@@ -24,6 +25,29 @@ export const translations = {
       letsCreate: "Let's Create Something Amazing Together!",
       thanks: "Thanks for visiting my website. I'm looking forward to sharing my world with you and exploring the intersections of technology, art, and design.",
       signature: "Best, Rycko",
+      whatIDo: "What I Do",
+      services: {
+        webDev: {
+          title: "Web Development",
+          description: "Custom websites built with modern technologies for optimal performance and user experience.",
+          cta: "View Projects"
+        },
+        seoAnalytics: {
+          title: "SEO & Analytics",
+          description: "Data-driven strategies and setup of analytics tools to improve your online visibility.",
+          cta: "Learn More"
+        },
+        automation: {
+          title: "Automation & Funnels",
+          description: "Automated workflows and conversion funnels to streamline your business processes.",
+          cta: "See Examples"
+        },
+        content: {
+          title: "Content & Training",
+          description: "Educational content creation and training programs for teams and individuals.",
+          cta: "Explore Content"
+        }
+      },
       // Interests
       interests: {
         development: {
@@ -162,8 +186,165 @@ export const translations = {
         serverManagement: "Server Management"
       },
       cta: "Ready to transform your digital presence?",
-      ctaButton: "Get In Touch"
+      ctaButton: "Get In Touch",
+      ctaButtonB: "Read my blog"
+    },
+    servicesPage: {
+    title: "Digital Services & Solutions",
+    subtitle: "Complete digital transformation for your business",
+    metaDescription: "Professional web development, SEO optimization, third-party integrations, hosting configuration, and digital marketing solutions.",
+    metaKeywords: "web development, SEO, digital marketing, e-commerce, WordPress, Shopify, React, hosting, email marketing, analytics",
+    
+    categories: {
+      webDevelopment: "Web Development",
+      seoAnalytics: "SEO & Analytics",
+      integrations: "Integrations",
+      platforms: "Platforms",
+      marketing: "Digital Marketing"
+    },
+    
+    servicesList: {
+      webDev: {
+        title: "Custom Web Development",
+        description: "Responsive websites, SPAs, and web applications with modern technologies.",
+        features: [
+          "Responsive Design (Mobile First)",
+          "React/Next.js Applications",
+          "Progressive Web Apps (PWA)",
+          "Performance Optimization",
+          "Clean, Maintainable Code"
+        ]
+      },
+      landingPages: {
+        title: "High-Converting Landing Pages",
+        description: "Optimized landing pages for campaigns and lead generation.",
+        features: [
+          "A/B Testing Integration",
+          "Conversion Rate Optimization",
+          "Fast Loading (< 2s)",
+          "Mobile Responsive",
+          "Analytics Setup"
+        ]
+      },
+      ecommerce: {
+        title: "E-commerce Solutions",
+        description: "Online stores with secure payment gateways and inventory management.",
+        features: [
+          "Shopify/WooCommerce",
+          "Payment Gateways",
+          "Product Management",
+          "Secure Checkout",
+          "Order Tracking"
+        ]
+      },
+      seo: {
+        title: "SEO & Technical Optimization",
+        description: "Improve your search engine rankings and organic traffic.",
+        features: [
+          "Keyword Research",
+          "On-Page SEO",
+          "Technical Audits",
+          "Backlink Strategy",
+          "Local SEO"
+        ]
+      },
+      analytics: {
+        title: "Analytics Implementation",
+        description: "Complete tracking setup for data-driven decisions.",
+        features: [
+          "Google Analytics 4",
+          "Meta/Facebook Pixel",
+          "Google Search Console",
+          "Floodlight Tags",
+          "Custom Event Tracking"
+        ]
+      },
+      integrations: {
+        title: "Third-Party Integrations",
+        description: "Connect your systems with external services and APIs.",
+        features: [
+          "Payment Gateways",
+          "CRM Systems",
+          "Email Marketing",
+          "Social Media APIs",
+          "Cloud Services"
+        ]
+      },
+      hosting: {
+        title: "Hosting & Infrastructure",
+        description: "Reliable hosting solutions and server configuration.",
+        features: [
+          "Shared/VPS Hosting",
+          "SSL Certificates",
+          "CDN Configuration",
+          "Backup Systems",
+          "Security Hardening"
+        ]
+      },
+      wordpress: {
+        title: "WordPress Development",
+        description: "Custom themes, plugins, and WordPress management.",
+        features: [
+          "Custom Theme Development",
+          "Plugin Customization",
+          "Performance Optimization",
+          "Security Updates",
+          "Content Migration"
+        ]
+      },
+      emailMarketing: {
+        title: "Email Marketing Automation",
+        description: "Automated email campaigns and subscriber management.",
+        features: [
+          "Mailchimp/Klaviyo Setup",
+          "Automation Workflows",
+          "Template Design",
+          "List Segmentation",
+          "Performance Analytics"
+        ]
+      },
+      maintenance: {
+        title: "Ongoing Maintenance",
+        description: "Regular updates and support for your digital presence.",
+        features: [
+          "Security Updates",
+          "Performance Monitoring",
+          "Content Updates",
+          "Technical Support",
+          "Monthly Reports"
+        ]
+      }
+    },
+    
+    process: {
+      title: "Our Working Process",
+      steps: [
+        {title: "Discovery", description: "Understanding your needs and goals"},
+        {title: "Planning", description: "Strategy and technical specification"},
+        {title: "Development", description: "Implementation and integration"},
+        {title: "Testing", description: "Quality assurance and optimization"},
+        {title: "Launch", description: "Deployment and monitoring"},
+        {title: "Support", description: "Maintenance and continuous improvement"}
+      ]
+    },
+    
+    cta: {
+      title: "Ready to transform your digital presence?",
+      description: "Get a free consultation and project estimate",
+      button: "Start Your Project"
     }
+  },
+  
+  // FAQ global (puede usarse en múltiples páginas)
+  faq: {
+    title: "Frequently Asked Questions",
+    webDevTime: "How long does a web development project take?",
+    webDevAnswer: "Typically 2-8 weeks depending on complexity and requirements.",
+    maintenance: "Do you provide ongoing maintenance?",
+    maintenanceAnswer: "Yes, we offer monthly maintenance packages with updates, backups, and support.",
+    migration: "Can you migrate my existing website?",
+    migrationAnswer: "Absolutely! We specialize in seamless website migrations with zero downtime."
+  }
   },
   es: {
     header: {
@@ -176,8 +357,9 @@ export const translations = {
     },
     home: {
       heroTitle: "Bienvenido a Mi Mundo: Donde la Tecnología se Encuentra con la Creatividad",
-      heroDescription: "Hola, soy Rycko, un desarrollador web apasionado y tech lead con un gran interés en explorar las intersecciones entre tecnología, arte y diseño.",
-      ctaButton: "Explora Mi Trabajo",
+      heroDescription: "Desarrollo web y consultoría digital para transformar tus ideas en sitios claros, bonitos y listos para posicionarse en Google.",
+      ctaButton: "Trabaja conmigo",
+      ctaButtonB: "Leer mi blog",
       aboutTitle: "Sobre Mí",
       aboutDescription: "Como desarrollador web experimentado, he tenido el privilegio de trabajar en varios proyectos que han perfeccionado mis habilidades en la creación de soluciones digitales innovadoras. Actualmente, lidero un equipo como tech lead, donde tengo la oportunidad de mentorizar y colaborar con talentosos individuos para expandir los límites de lo posible en la web.",
       interestsTitle: "Mis Intereses y Pasiones",
@@ -190,6 +372,29 @@ export const translations = {
       letsCreate: "¡Creemos Algo Increíble Juntos!",
       thanks: "Gracias por visitar mi sitio web. Estoy deseando compartir mi mundo contigo y explorar las intersecciones de tecnología, arte y diseño.",
       signature: "Saludos, Rycko",
+      whatIDo: "Lo que Hago",
+      services: {
+        webDev: {
+          title: "Desarrollo Web",
+          description: "Sitios web personalizados construidos con tecnologías modernas para máximo rendimiento y experiencia de usuario.",
+          cta: "Ver Proyectos"
+        },
+        seoAnalytics: {
+          title: "SEO & Analítica",
+          description: "Estrategias basadas en datos y configuración de herramientas de analítica para mejorar tu visibilidad online.",
+          cta: "Saber Más"
+        },
+        automation: {
+          title: "Automatización y Funnels",
+          description: "Flujos de trabajo automatizados y embudos de conversión para optimizar tus procesos empresariales.",
+          cta: "Ver Ejemplos"
+        },
+        content: {
+          title: "Contenido & Formación",
+          description: "Creación de contenido educativo y programas de formación para equipos e individuos.",
+          cta: "Explorar Contenido"
+        }
+      },
       // Interests
       interests: {
         development: {
@@ -302,7 +507,8 @@ export const translations = {
         serverManagement: "Administración de Servidores"
       },
       cta: "¿Listo para transformar tu presencia digital?",
-      ctaButton: "Contáctame"
+      ctaButton: "Contáctame",
+      ctaButtonB: "Leer mi blog"
     },
     contact: {
       title: "Ponte en Contacto",
@@ -329,6 +535,162 @@ export const translations = {
       quickLinks: "Enlaces Rápidos",
       contact: "Contacto",
       rights: "Todos los derechos reservados."
+    },
+    servicesPage: {
+    title: "Servicios & Soluciones Digitales",
+    subtitle: "Transformación digital completa para tu negocio",
+    metaDescription: "Desarrollo web profesional, optimización SEO, integraciones de terceros, configuración de hosting y soluciones de marketing digital.",
+    metaKeywords: "desarrollo web, SEO, marketing digital, e-commerce, WordPress, Shopify, React, hosting, email marketing, analytics",
+    
+    categories: {
+      webDevelopment: "Desarrollo Web",
+      seoAnalytics: "SEO & Analytics",
+      integrations: "Integraciones",
+      platforms: "Plataformas",
+      marketing: "Marketing Digital"
+    },
+    
+    servicesList: {
+      webDev: {
+        title: "Desarrollo Web Personalizado",
+        description: "Sitios web responsivos, SPAs y aplicaciones web con tecnologías modernas.",
+        features: [
+          "Diseño Responsivo (Mobile First)",
+          "Aplicaciones React/Next.js",
+          "Progressive Web Apps (PWA)",
+          "Optimización de Rendimiento",
+          "Código Limpio y Mantenible"
+        ]
+      },
+      landingPages: {
+        title: "Landing Pages de Alta Conversión",
+        description: "Páginas de destino optimizadas para campañas y generación de leads.",
+        features: [
+          "Integración de A/B Testing",
+          "Optimización de Tasa de Conversión",
+          "Carga Rápida (< 2s)",
+          "Responsive para Móviles",
+          "Configuración de Analytics"
+        ]
+      },
+      ecommerce: {
+        title: "Soluciones E-commerce",
+        description: "Tiendas online con pasarelas de pago seguras y gestión de inventario.",
+        features: [
+          "Shopify/WooCommerce",
+          "Pasarelas de Pago",
+          "Gestión de Productos",
+          "Checkout Seguro",
+          "Seguimiento de Pedidos"
+        ]
+      },
+      seo: {
+        title: "SEO & Optimización Técnica",
+        description: "Mejora tu posicionamiento en buscadores y tráfico orgánico.",
+        features: [
+          "Investigación de Keywords",
+          "SEO On-Page",
+          "Auditorías Técnicas",
+          "Estrategia de Backlinks",
+          "SEO Local"
+        ]
+      },
+      analytics: {
+        title: "Implementación de Analytics",
+        description: "Configuración completa de seguimiento para decisiones basadas en datos.",
+        features: [
+          "Google Analytics 4",
+          "Pixel de Meta/Facebook",
+          "Google Search Console",
+          "Etiquetas Floodlight",
+          "Seguimiento de Eventos Personalizados"
+        ]
+      },
+      integrations: {
+        title: "Integraciones de Terceros",
+        description: "Conecta tus sistemas con servicios externos y APIs.",
+        features: [
+          "Pasarelas de Pago",
+          "Sistemas CRM",
+          "Email Marketing",
+          "APIs de Redes Sociales",
+          "Servicios en la Nube"
+        ]
+      },
+      hosting: {
+        title: "Hosting & Infraestructura",
+        description: "Soluciones de hosting confiables y configuración de servidores.",
+        features: [
+          "Hosting Compartido/VPS",
+          "Certificados SSL",
+          "Configuración CDN",
+          "Sistemas de Backup",
+          "Fortificación de Seguridad"
+        ]
+      },
+      wordpress: {
+        title: "Desarrollo WordPress",
+        description: "Temas personalizados, plugins y gestión de WordPress.",
+        features: [
+          "Desarrollo de Temas Personalizados",
+          "Personalización de Plugins",
+          "Optimización de Rendimiento",
+          "Actualizaciones de Seguridad",
+          "Migración de Contenido"
+        ]
+      },
+      emailMarketing: {
+        title: "Automatización de Email Marketing",
+        description: "Campañas de email automatizadas y gestión de suscriptores.",
+        features: [
+          "Configuración Mailchimp/Klaviyo",
+          "Flujos de Trabajo Automatizados",
+          "Diseño de Plantillas",
+          "Segmentación de Listas",
+          "Analítica de Rendimiento"
+        ]
+      },
+      maintenance: {
+        title: "Mantenimiento Continuo",
+        description: "Actualizaciones regulares y soporte para tu presencia digital.",
+        features: [
+          "Actualizaciones de Seguridad",
+          "Monitoreo de Rendimiento",
+          "Actualizaciones de Contenido",
+          "Soporte Técnico",
+          "Reportes Mensuales"
+        ]
+      }
+    },
+    
+    process: {
+      title: "Nuestro Proceso de Trabajo",
+      steps: [
+        {title: "Descubrimiento", description: "Entendemos tus necesidades y objetivos"},
+        {title: "Planificación", description: "Estrategia y especificación técnica"},
+        {title: "Desarrollo", description: "Implementación e integración"},
+        {title: "Testing", description: "Control de calidad y optimización"},
+        {title: "Lanzamiento", description: "Despliegue y monitoreo"},
+        {title: "Soporte", description: "Mantenimiento y mejora continua"}
+      ]
+    },
+    
+    cta: {
+      title: "¿Listo para transformar tu presencia digital?",
+      description: "Obtén una consulta gratuita y estimado de proyecto",
+      button: "Comienza Tu Proyecto"
     }
+  },
+  
+  // FAQ global (puede usarse en múltiples páginas)
+  faq: {
+    title: "Preguntas Frecuentes",
+    webDevTime: "¿Cuánto tiempo toma un proyecto de desarrollo web?",
+    webDevAnswer: "Normalmente 2-8 semanas dependiendo de la complejidad y requisitos.",
+    maintenance: "¿Proveen mantenimiento continuo?",
+    maintenanceAnswer: "Sí, ofrecemos paquetes de mantenimiento mensual con actualizaciones, backups y soporte.",
+    migration: "¿Pueden migrar mi sitio web existente?",
+    migrationAnswer: "¡Absolutamente! Especializados en migraciones sin tiempo de inactividad."
+  }
   }
 };

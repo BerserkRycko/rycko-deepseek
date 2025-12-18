@@ -232,7 +232,7 @@ const About = () => {
                 {t('about.ctaButton')}
               </Link>
               <Link to="/blog" className="btn btn-large btn-outline">
-                Leer Mi Blog
+                {t('about.ctaButtonB')}
               </Link>
             </div>
           </div>
