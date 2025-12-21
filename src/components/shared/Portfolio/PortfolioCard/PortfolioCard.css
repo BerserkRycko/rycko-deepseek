@@ -1,0 +1,206 @@
+/* PortfolioCard.css - Adaptado */
+.portfolio-card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px var(--shadow);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px var(--shadow-hover);
+  border-color: var(--primary-light);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.category-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--primary-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.project-year {
+  color: var(--text-medium);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.25rem 0.75rem;
+  background: var(--background-light);
+  border-radius: 50px;
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  margin: 0 1.5rem;
+  border-radius: 8px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.portfolio-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.image-count {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: rgba(0, 0, 0, 0.75);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+.project-description {
+  color: var(--text-medium);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.tech-badge {
+  padding: 0.35rem 0.75rem;
+  background: var(--background-light);
+  color: var(--text-dark);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--border-light);
+}
+
+.portfolio-card:hover .tech-badge {
+  border-color: var(--primary-light);
+  background: rgba(19, 195, 217, 0.1);
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.achievement-badge {
+  padding: 0.35rem 0.75rem;
+  background: var(--primary-medium);
+  color: var(--white);
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.card-actions {
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  gap: 1rem;
+  border-top: 1px solid var(--border-light);
+  margin-top: auto;
+}
+
+.btn-view-details {
+  flex: 1;
+  padding: 10px 20px;
+  background: var(--background-light);
+  color: var(--text-dark);
+  border: 2px solid var(--border-light);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-view-details:hover {
+  background: var(--primary-light);
+  color: var(--white);
+  border-color: var(--primary-light);
+}
+
+.btn-view-live {
+  flex: 1;
+  padding: 10px 20px;
+  background: var(--primary-light);
+  color: var(--white);
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-view-live:hover {
+  background: var(--primary-medium);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .card-image {
+    height: 180px;
+    margin: 0 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.3rem;
+  }
+  
+  .card-actions {
+    flex-direction: column;
+  }
+  
+  .btn-view-details,
+  .btn-view-live {
+    width: 100%;
+  }
+}

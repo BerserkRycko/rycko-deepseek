@@ -30,6 +30,9 @@ const Header = () => {
                 <a href="/services" className="nav-link">{t('header.services')}</a>
               </li>
               <li>
+                <a href="/portfolio" className="nav-link">{t('header.portfolio')}</a>
+              </li>
+              <li>
                 <Link to="/blog" className="nav-link">{t('header.blog')}</Link>
               </li>
               <li>

@@ -1,0 +1,197 @@
+/* Portfolio.css - Adaptado al sistema global */
+.portfolio-page {
+  color: var(--text-dark);
+  background: var(--white);
+  min-height: calc(100vh - 160px);
+}
+
+.portfolio-hero {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-medium) 100%);
+  color: var(--white);
+  padding: 120px 0 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-hero .hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--white);
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.portfolio-hero .hero-subtitle {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portfolio-hero .breadcrumb {
+  margin-top: 2rem;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.portfolio-hero .breadcrumb ol {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.portfolio-hero .breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-hero .breadcrumb li:not(:last-child)::after {
+  content: '/';
+  margin-left: 0.75rem;
+  opacity: 0.5;
+}
+
+.portfolio-hero .breadcrumb a {
+  color: var(--white);
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-hero .breadcrumb a:hover {
+  opacity: 0.8;
+}
+
+.portfolio-hero .breadcrumb li[aria-current="page"] {
+  opacity: 0.7;
+}
+
+/* Portfolio Projects Section */
+.portfolio-projects {
+  padding: 80px 0;
+}
+
+.portfolio-projects .container {
+  max-width: 1200px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.no-projects {
+  text-align: center;
+  padding: 4rem;
+  color: var(--text-medium);
+  font-size: 1.2rem;
+  background: var(--background-light);
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+}
+
+/* Portfolio CTA Section */
+.portfolio-cta {
+  background: linear-gradient(135deg, var(--primary-medium) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.portfolio-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.portfolio-cta p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.portfolio-cta .cta-button {
+  display: inline-block;
+  background: var(--white);
+  color: var(--primary-medium);
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.portfolio-cta .cta-button:hover {
+  background: var(--primary-light);
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px var(--shadow-hover);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-hero .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .portfolio-hero .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-cta h2 {
+    font-size: 2rem;
+  }
+  
+  .portfolio-cta p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-hero {
+    padding: 100px 0 40px;
+  }
+  
+  .portfolio-hero .hero-title {
+    font-size: 2rem;
+  }
+  
+  .portfolio-cta {
+    padding: 60px 0;
+  }
+  
+  .portfolio-cta h2 {
+    font-size: 1.75rem;
+  }
+}

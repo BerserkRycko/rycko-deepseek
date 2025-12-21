@@ -12,6 +12,8 @@ import Contact from '../pages/Contact/Contact'
 import PrivacyPolicy from '../pages/PrivatePolicy/PrivatePolicy'
 import CookiesPolicy from '../pages/CoockiePolicy/CoockiePolicy'
 import ServicesPage from '../pages/Services/Services.jsx'
+import PortfolioPage from '../pages/Portfolio/PortfolioPage.jsx';
+
 
 const AppRouter = () => {
   return (
@@ -25,13 +27,10 @@ const AppRouter = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<ArticleDetail />} />
           <Route path="/gallery" element={<Gallery />} />
-          
-          {/* Corregí este comentario, debe ir entre llaves */}
-          {/* Asegúrate de tener esta ruta */}
-          
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path='/private-policy' element={<PrivacyPolicy />} />
           <Route path='/cookies-policy' element={<CookiesPolicy />} />
         </Routes>

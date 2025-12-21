@@ -4,6 +4,7 @@ export const translations = {
       home: "Home",
       about: "About",
       services: "Services",
+      portfolio: "Portfolio",
       blog: "Blog",
       gallery: "Gallery",
       contact: "Contact"
@@ -344,6 +345,56 @@ export const translations = {
     maintenanceAnswer: "Yes, we offer monthly maintenance packages with updates, backups, and support.",
     migration: "Can you migrate my existing website?",
     migrationAnswer: "Absolutely! We specialize in seamless website migrations with zero downtime."
+  },
+    portfolio: {
+    title: "My Portfolio",
+    subtitle: "A showcase of my web projects, email campaigns, server configurations, and digital achievements",
+    metaDescription: "Explore my portfolio of web development projects, email marketing campaigns, server configurations, and digital solutions. See real examples of my work.",
+    metaKeywords: "portfolio, web development projects, email marketing examples, server configuration, WordPress, React, e-commerce, SEO projects",
+    
+    categories: {
+      all: "All Projects",
+      webDevelopment: "Web Development",
+      emailMarketing: "Email Marketing",
+      serverConfig: "Server Configuration",
+      seo: "SEO Projects",
+      automation: "Automation"
+    },
+    
+    filters: {
+      showAll: "Show All",
+      filterBy: "Filter by category",
+      searchPlaceholder: "Search projects..."
+    },
+    
+    projectDetails: "Project Details",
+    technologiesUsed: "Technologies Used",
+    client: "Client",
+    year: "Year",
+    viewLive: "View Live Project",
+    viewDetails: "View Details",
+    achievements: "Key Achievements",
+    
+    achievementsList: {
+      performance: "Performance Improvements",
+      conversions: "Conversion Rate Increase",
+      automation: "Process Automation",
+      security: "Security Enhancements",
+      scalability: "Scalability Solutions"
+    },
+    
+    stats: {
+      projects: "Completed Projects",
+      clients: "Satisfied Clients",
+      uptime: "Server Uptime",
+      emails: "Emails Delivered"
+    },
+    
+    cta: {
+      title: "Have a similar project in mind?",
+      description: "Let's discuss how we can bring your ideas to life",
+      button: "Start Your Project"
+    }
   }
   },
   es: {
@@ -351,6 +402,7 @@ export const translations = {
       home: "Inicio",
       about: "Sobre Mí",
       services: "Servicios",
+      portfolio: "Portafolio",
       blog: "Blog",
       gallery: "Galería",
       contact: "Contacto"
@@ -691,6 +743,56 @@ export const translations = {
     maintenanceAnswer: "Sí, ofrecemos paquetes de mantenimiento mensual con actualizaciones, backups y soporte.",
     migration: "¿Pueden migrar mi sitio web existente?",
     migrationAnswer: "¡Absolutamente! Especializados en migraciones sin tiempo de inactividad."
+  },
+    portfolio: {
+    title: "Mi Portafolio",
+    subtitle: "Una muestra de mis proyectos web, campañas de email, configuraciones de servidores y logros digitales",
+    metaDescription: "Explora mi portafolio de proyectos de desarrollo web, campañas de email marketing, configuraciones de servidores y soluciones digitales. Ve ejemplos reales de mi trabajo.",
+    metaKeywords: "portafolio, proyectos desarrollo web, ejemplos email marketing, configuración servidores, WordPress, React, e-commerce, proyectos SEO",
+    
+    categories: {
+      all: "Todos los Proyectos",
+      webDevelopment: "Desarrollo Web",
+      emailMarketing: "Email Marketing",
+      serverConfig: "Configuración de Servidores",
+      seo: "Proyectos SEO",
+      automation: "Automatización"
+    },
+    
+    filters: {
+      showAll: "Mostrar Todos",
+      filterBy: "Filtrar por categoría",
+      searchPlaceholder: "Buscar proyectos..."
+    },
+    
+    projectDetails: "Detalles del Proyecto",
+    technologiesUsed: "Tecnologías Utilizadas",
+    client: "Cliente",
+    year: "Año",
+    viewLive: "Ver Proyecto en Vivo",
+    viewDetails: "Ver Detalles",
+    achievements: "Logros Clave",
+    
+    achievementsList: {
+      performance: "Mejoras de Rendimiento",
+      conversions: "Aumento en Tasa de Conversión",
+      automation: "Automatización de Procesos",
+      security: "Mejoras de Seguridad",
+      scalability: "Soluciones de Escalabilidad"
+    },
+    
+    stats: {
+      projects: "Proyectos Completados",
+      clients: "Clientes Satisfechos",
+      uptime: "Tiempo Activo Servidores",
+      emails: "Emails Enviados"
+    },
+    
+    cta: {
+      title: "¿Tienes un proyecto similar en mente?",
+      description: "Hablemos sobre cómo podemos dar vida a tus ideas",
+      button: "Comienza Tu Proyecto"
+    }
   }
   }
 };
