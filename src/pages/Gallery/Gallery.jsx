@@ -179,6 +179,15 @@ const Gallery = () => {
       image: "/images/gallery/carnival.jpg",
       technologies: ["Nikon", "DSLR Camera", "Nikon D3500"],
       link: "https://www.behance.net/gallery/213738239/Photography-street-Orizaba/modules/1215942379"
+    },
+    {
+      id: 20,
+      title: "Juez Dread",
+      description: t('gallery.carruselDescription'),
+      category: "pixelart",
+      image: "/images/gallery/JuezDread.jpg",
+      technologies: ["Pixelart", "retro gaming", "judge Dread"],
+      link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
     }
   ], [t]);
 
