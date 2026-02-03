@@ -188,7 +188,26 @@ const Gallery = () => {
       image: "/images/gallery/JuezDread.jpg",
       technologies: ["Pixelart", "retro gaming", "judge Dread"],
       link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
+    },
+    {
+      id: 21,
+      title: "Darth Vader",
+      description: t('gallery.carruselDescription'),
+      category: "pixelart",
+      image: "/images/gallery/DarthVader.jpg",
+      technologies: ["Pixelart", "retro gaming", "starwars", "Darth Vader"],
+      link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
+    },
+    {
+      id: 22,
+      title: "Predator",
+      description: t('gallery.carruselDescription'),
+      category: "pixelart",
+      image: "/images/gallery/Predator.jpg",
+      technologies: ["Pixelart", "retro gaming", "Predator"],
+      link: "https://www.behance.net/gallery/225595251/Characters-in-Pixel-Art"
     }
+
   ], [t]);
 
   // Categorías disponibles
