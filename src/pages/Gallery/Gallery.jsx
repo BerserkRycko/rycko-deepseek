@@ -317,7 +317,7 @@ const Gallery = () => {
             <div className="modal-info">
               <h2>{selectedImage.title}</h2>
               <p>{selectedImage.description}</p>
-              <div className="modal-technologies">
+              <div className="">
                 {selectedImage.technologies.map((tech, index) => (
                   <span key={index} className="tech-tag">{tech}</span>
                 ))}

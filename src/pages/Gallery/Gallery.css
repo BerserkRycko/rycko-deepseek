@@ -303,7 +303,7 @@
   gap: 0.5rem;
 }
 
- .tech-tag {
+.modal-technologies .tech-tag {
   background: var(--primary-light);
   color: var(--white);
   padding: 6px 12px;
